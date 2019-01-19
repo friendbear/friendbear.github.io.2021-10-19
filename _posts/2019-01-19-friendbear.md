@@ -16,8 +16,8 @@ author: friendbear
 - pages.github.io の選択できるテーマの元を調べてclone
 - jekyll Rubyの仕組みを調査
     <https://jekyllrb.com/docs/step-by-step>
-- Blog on Disqus 
-    <https://desiredpersona.com/disqus-comments-jekyll/>
+- Blog on Disqus <https://desiredpersona.com/disqus-comments-jekyll/>
+  ref <https://stackoverflow.com/questions/21446165/how-do-i-use-disqus-comments-in-github-pages-blog-markdown>
 
 ### Good by Powerpoint 
 
