@@ -1,4 +1,3 @@
-
 ---
 layout: post
 author: friendbear
@@ -15,8 +14,11 @@ author: friendbear
 
 - Join Codedev  <https://codecov.io/>
   - Setup sbt and 
+
     `addSbtPlugin("org.scoverage" % "sbt-scoverage" % "1.5.1")`
-    `sbt clean coverage test coverageReport`
+    `$ sbt clean coverage test coverageReport`
+
+    - Code coverage Sourcegraph Extension <https://github.com/codecov/sourcegraph-codecov/blob/master/README.md>
 
 - Gitter
   - Make new Scala Room
