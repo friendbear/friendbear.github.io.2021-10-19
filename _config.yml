@@ -1,7 +1,33 @@
-title: Architect theme
-description: Architect is a theme for GitHub Pages.
+title: bearsworld
+description: for GitHub Pages.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-architect
+
+# Disqus Comments
 disqus:
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
   shortname: friendbear
+
+comments: true
+
+collections:
+  authors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

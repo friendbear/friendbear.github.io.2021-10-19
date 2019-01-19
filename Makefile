@@ -2,7 +2,7 @@
 all: build serve
 
 build:
-	bundle exec jekyll build
+	JEKYLL_ENV=production bundle exec jekyll build --incremental
 
 serve:
-	bundle exec jekyll serve
+	JEKYLL_ENV=production bundle exec jekyll serve --incremental
