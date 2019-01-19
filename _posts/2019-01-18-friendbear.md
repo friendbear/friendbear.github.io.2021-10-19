@@ -30,3 +30,5 @@ author: friendbear
 
 ### New Software
 - Station
+  - Ofice365
+  - and more

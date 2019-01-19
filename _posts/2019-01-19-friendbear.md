@@ -5,6 +5,9 @@ author: friendbear
 
 ### Start This Blog
 
+### Join Slack
+<https://github.com/prisma>
+
 ### gocui
 - Makefile test and review
 
