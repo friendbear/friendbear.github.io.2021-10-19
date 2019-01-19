@@ -3,6 +3,8 @@ layout: post
 author: friendbear
 ---
 
+### Start This Blog
+
 ### gocui
 - Makefile test and review
 
