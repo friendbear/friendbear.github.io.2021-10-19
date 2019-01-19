@@ -11,7 +11,8 @@ author: friendbear
 $ brew install privoxy
 $ brew services start privoxy
 ```
-http://p.p/ // Proxy
+
+[localaccess](http://p.p/) // Proxy
 
 * Yubico 設定
 * DNSSec設定

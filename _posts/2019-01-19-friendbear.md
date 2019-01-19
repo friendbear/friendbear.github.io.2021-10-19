@@ -21,7 +21,7 @@ author: friendbear
 <https://github.com/yhatt/marp/>
 - `brew cask install marp`
 
-```markdown
+```raw
 <!-- $theme: gaia -->
 
 # Introducing ==Gaia== theme
