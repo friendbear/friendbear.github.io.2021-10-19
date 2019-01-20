@@ -12,7 +12,7 @@ author: friendbear
 
 
 <details>
-<summary>Future Map</summary>
+<summary>Snippet</summary>
 <pre>
 <code class="language-scala">
 
@@ -38,6 +38,35 @@ def curried(args: String*) = {
 </code>
 
 <code>
+#!/usr/bin/env amm
+@main
+def filteringWithLazyVals(args: String*) = {
+
+  // filtering with lazy vals
+  {
+    def lessThan30(i: Int): Boolean = {
+      println(s"$i is grater than 30?")
+      i < 30
+    }
+
+    // filtering with lazy vals
+    def graterThan20(i: Int): Boolean = {
+      println(s"$i is grater than 20?")
+      i > 20
+    }
+
+    val numbers = List(1, 25, 40, 5, 23)
+    val lt30 = numbers.filter(lessThan30) // List(1, 25, 5, 23)
+    val gt20 = lt30.filter(graterThan20) // List(25, 23)
+
+    println(gt20)
+
+    // use withFilter point.
+    val it30Lazy = numbers.withFilter(lessThan30) // lazy vals under the head
+    val gt20Lazy = it30Lazy.withFilter(graterThan20)
+    gt20Lazy.foreach(println)
+  }
+}
 </code>
 </pre>
 </details>
