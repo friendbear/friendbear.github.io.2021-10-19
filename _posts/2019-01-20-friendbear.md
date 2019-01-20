@@ -22,7 +22,7 @@ def curried(args: String*) = {
 
   val superAdderOrg: Int => (Int => Int) = (x: Int) => (y: Int) => x + y
   // equal
-  val superAdder: Int => Int => Int = // Higher order function 🔴
+  val superAdder: Int => Int => Int = // Higher order function ðŸ”´
     x => y => x + y
 
   // curried functions
@@ -66,7 +66,7 @@ def filteringWithLazyVals(args: String*) = {
     gt20Lazy.foreach(println)
   }
 }
-</code
+</code>
 </pre>
 </details>
 
