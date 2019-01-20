@@ -1,9 +1,9 @@
 title: bearsworld
 description: for GitHub Pages.
 show_downloads: true
-google_analytics: "UA-37353976-2"
+google_analytics: true
 theme: jekyll-theme-architect
-
+-- paginate: 5
 # Disqus Comments
 disqus:
   # Leave shortname blank to disable comments site-wide.
