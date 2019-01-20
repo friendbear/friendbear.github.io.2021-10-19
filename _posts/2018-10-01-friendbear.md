@@ -1,8 +1,8 @@
 ---
 layout: post
 auther: freindbear
+title: Meet up AWS Loft Tokyo start up event
 ---
-### Join AWS Loft Tokyo start up
 # AWS Loft Tokyo 午後の部
 
 ## チームビルディング
