@@ -1,6 +1,7 @@
 ---
 layout: post
 author: friendbear
+title: 01/20 Try Scala and more.
 ---
 
 ### Try Scala
@@ -13,8 +14,8 @@ author: friendbear
 
 <details>
 <summary>Snippet</summary>
-<p>
-```scala
+<pre>
+<code>
 #!/usr/bin/env amm
 @main
 def curried(args: String*) = {
@@ -33,9 +34,9 @@ def curried(args: String*) = {
   println(add3(5)) // Int => 3 + 5
   println(superAdder(3)(5)) // curried function
 }
-```
+</code>
 
-```scala
+<code>
 #!/usr/bin/env amm
 @main
 def filteringWithLazyVals(args: String*) = {
@@ -65,7 +66,7 @@ def filteringWithLazyVals(args: String*) = {
     gt20Lazy.foreach(println)
   }
 }
-```
-</p>
+</code
+</pre>
 </details>
 
