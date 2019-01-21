@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title: 01/21 Try Scala and more.
+title: 01/21 Scala and other Try.
 ---
 
 ### Try Scala
@@ -11,6 +11,7 @@ title: 01/21 Try Scala and more.
   + Functional Concurrent Programming
     + Intro to Parallel Programming on the JVM
     + Concurrency Problems on the JVM 
+
 
 ```scala
 /**
