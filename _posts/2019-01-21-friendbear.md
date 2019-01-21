@@ -1,21 +1,25 @@
 ---
 layout: post
 author: friendbear
-title: 01/21 Scala and other Try.
+title: 01/21 Scala and other Try Log
 ---
 
 ### Try Scala
 - RockScalaAdvanced
   + AdvancedFunctional Programing
-    + Monads (is very important 🔴
+    + Monads (is very important ðŸ”´
   + Functional Concurrent Programming
     + Intro to Parallel Programming on the JVM
     + Concurrency Problems on the JVM 
 
-
+### other
+- Set up a contact point on this page
+  - <https://hubspot.com>
+  - Cooperation with Slack
+ 
 ```scala
 /**
-  * - Monads is very important 🔴
+  * - Monads is very important ðŸ”´
   *
   * trait MonadTemplate[A] {
   *   def unit(value: A): MonadTemplate[A] // also called pure or apply
