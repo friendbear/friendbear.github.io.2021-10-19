@@ -13,10 +13,12 @@ title: 01/21 Scala and other Try Log
     + Concurrency Problems on the JVM 
 
 ### other
-- Set up a contact point on this page
-  - <https://hubspot.com>
-  - Cooperation with Slack
+- Contact add-on setup
+  - <https://www.hubspot.com/>
+  - Slack coordination setting
  
+- Contact us https://share.hsforms.com/1JcJyjh3CT5O62BL7h8H0Ww36y3j
+
 ```scala
 /**
   * - Monads is very important ðŸ”´
