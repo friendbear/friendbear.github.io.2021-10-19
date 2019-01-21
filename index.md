@@ -5,11 +5,11 @@ layout: default
 # May be underconstruction 
 
 ## Contents
-[About Me](/about.html)
-[Blog](/blog)
-
+* [Blog](/blog)
+* [About Me](/about.html)
 
 ### This Page is generate by [Jekyllrb](https://jekyllrb.com)
+
 
 ### Writing Format is Markdown
 Text can be **bold**, _italic_, or ~~strikethrough~~.
