@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title: 01/20 Try Scala and more.
+title: 01/21 Try Scala and more.
 ---
 
 ### Try Scala
