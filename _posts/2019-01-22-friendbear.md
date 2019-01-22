@@ -106,6 +106,7 @@ Capturing on 'Wi-Fi'
 ### Try Scala
 - RockScalaAdvanced
   -  JVM Thread Communication
+  -  Producer-Consumer, Level2
 
 <details>
 <summary>Snippet</summary>
@@ -220,6 +221,21 @@ def ThreadCommunication(args: String*) = {
 def ConcurrencyOnJVM(args: String*) = {
 
 }
+</code>
+</pre>
+</details>
+<details>
+<summary>kumasora</summary>
+<pre>
+<code>
+// kumasora code lesson
+            var layer = GetLayer("TEST");
+            var BG = layer.CreateSprite("back.png", OsbOrigin.Centre);
+
+            BG.Scale(0, 10000, 2, 2);
+            BG.Fade(0, 2000, 0, 10);
+            BG.Fade(8000, 10000, 10, 0);
+
 </code>
 </pre>
 </details>
