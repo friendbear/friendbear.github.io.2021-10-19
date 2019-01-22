@@ -231,6 +231,8 @@ Capturing on 'Wi-Fi'
   -  Producer-Consumer, Level2
   -  Producer-Consumer, Level3
 
+---
+
 <details>
 <summary>Snippet</summary>
 <pre>
@@ -433,7 +435,6 @@ def ProducerConsumerLevel3(args: String*) = {
 </details>
 <details>
 
-===
   
 <summary>kumasora(osu! storyboard)</summary>
 <pre>
@@ -450,6 +451,7 @@ def ProducerConsumerLevel3(args: String*) = {
 </pre>
 </details>
 
+---
 ### Usefull Link
 
 * <https://codesandbox.io/>
