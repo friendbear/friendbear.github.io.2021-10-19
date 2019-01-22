@@ -228,7 +228,7 @@ def ConcurrencyOnJVM(args: String*) = {
 <summary>kumasora</summary>
 <pre>
 <code>
-// kumasora code lesson
+// kumasora programming lesson
             var layer = GetLayer("TEST");
             var BG = layer.CreateSprite("back.png", OsbOrigin.Centre);
 
