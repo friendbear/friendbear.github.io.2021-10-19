@@ -11,7 +11,8 @@ title: 01/22 JDK on Amazon, Security, CRM Setup, and other
 ### Security 
 - DNS Hosts file
 <https://github.com/drduh/macOS-Security-and-Privacy-Guide#hosts-file>
-```
+
+```shell
 $ curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts | sudo tee -a /etc/hosts
 
 $ wc -l /etc/hosts
@@ -36,7 +37,7 @@ https://github.com/jedisct1/dnscrypt-proxy
   Poured from bottle on 2019-01-15 at 09:27:12
 From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/dnscrypt-proxy.rb
 ==> Dependencies
-Build: go âœ”
+Build: go Ă˘Ĺâ
 ==> Options
 --HEAD
 	Install HEAD version
@@ -80,8 +81,9 @@ dnscrypt- 16387 nobody   14u  IPv6 0xc0d1987dc8b2bfb      0t0  UDP [::1]:5355
 * Stars
   - <https://github.com/Cofyc/dnscrypt-wrapper>
 
-### Dnsmasq setup faild
-Try again
+#### Dnsmasq setup faild
+**Try again**
+
 <https://github.com/drduh/macOS-Security-and-Privacy-Guide#dnsmasq>
 
 #### Check Firewall
@@ -105,10 +107,10 @@ resolver #1
 resolver #2
   domain   : local
   options  : mdns
- k22  m6  ~  Posts  master  $ 
+ k22 î° m6 î° ~ î° Posts î° master î° $ î°
  networksetup -getdnsservers "Wi-Fi"
 127.0.0.1
- k22  m6  ~  Posts  master  $ 
+ k22 î° m6 î° ~ î° Posts î° master î° $ î°
  dig +dnssec icann.org
 
 ; <<>> DiG 9.10.6 <<>> +dnssec icann.org
@@ -148,9 +150,60 @@ $ dig www.dnssec-failed.org
 ;; SERVER: 127.0.0.1#53(127.0.0.1)
 ;; WHEN: Tue Jan 22 15:19:39 JST 2019
 ;; MSG SIZE  rcvd: 50
+
+$ dig +dnssec icann.org
+
+; <<>> DiG 9.10.6 <<>> +dnssec icann.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 8197
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 1252
+;; QUESTION SECTION:
+;icann.org.			IN	A
+
+;; ANSWER SECTION:
+icann.org.		599	IN	A	192.0.43.7
+icann.org.		599	IN	RRSIG	A 7 2 600 20190203113621 20190113072110 37170 icann.org. PLr/I2F3vtEl7ehskLkj3oBtFkzdeqV7gbmD7Jz5E+4YVdaMiMynQpKu F7hf5EIlUcGbqWIuPyvPX/u7EAET9FiAox5oDNvm+0CU8RIaCTyhkly3 Z6CbOrqjwEe2uQ8wAIfdanhgMqfQ7YYGz0k/jsEAoZQoahCYGcMHDXWl GfQ=
+
+;; Query time: 256 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Tue Jan 22 17:53:00 JST 2019
+;; MSG SIZE  rcvd: 241
 ```
 
-### Install Wireshark
+#### Proxy configuration(Wifi)
+
+cmd
+
+```sh
+$ sudo networksetup -setwebproxy "Wi-Fi" 127.0.0.1 8118
+
+$ sudo networksetup -setsecurewebproxy "Wi-Fi" 127.0.0.1 8118
+```
+
+```sh
+$ scutil --proxy
+<dictionary> {
+  ExceptionsList : <array> {
+    0 : *.local
+    1 : 169.254/16
+  }
+  FTPPassive : 1
+  HTTPEnable : 1
+  HTTPPort : 8118
+  HTTPProxy : 127.0.0.1
+  HTTPSEnable : 1
+  HTTPSPort : 8118
+  HTTPSProxy : 127.0.0.1
+  SOCKSEnable : 0
+}
+```
+
+#### Install Wireshark
+
 ```shell
 $ tshark -Y "http.request or http.response" -Tfields   -e ip.dst   -e http.request.full_uri   -e http.request.method   -e http.response.code   -e http.response.phrase   -Eseparator=/s
 
@@ -169,10 +222,14 @@ Capturing on 'Wi-Fi'
 ### Setup CRM
 - HubSpot
 
+### Install Software
+- `brew cask install macdown`
+
 ### Try Scala
 - RockScalaAdvanced
   -  JVM Thread Communication
   -  Producer-Consumer, Level2
+  -  Producer-Consumer, Level3
 
 <details>
 <summary>Snippet</summary>
@@ -318,7 +375,7 @@ def ProducerConsumerLevel3(args: String*) = {
             at concurrency.ProducerConsumerLevel3$Consumer.run(ProducerConsumerLevel3.scala:39)
           [producer 2] producing 1
           why ?
-            🔴 This is Point not if use while 🔴
+            đ´ This is Point not if use while đ´
            */
           while (buffer.isEmpty) {
             println(s"[consumer $id] buffer empty, waiting ...")
@@ -376,7 +433,7 @@ def ProducerConsumerLevel3(args: String*) = {
 </details>
 <details>
 
----
+===
   
 <summary>kumasora(osu! storyboard)</summary>
 <pre>
@@ -394,4 +451,6 @@ def ProducerConsumerLevel3(args: String*) = {
 </details>
 
 ### Usefull Link
-<https://codesandbox.io/>
+
+* <https://codesandbox.io/>
+* <http://krypted.com/mac-security/command-line-firewall-management-in-os-x-10-10/>
