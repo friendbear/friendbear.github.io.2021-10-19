@@ -225,7 +225,7 @@ def ConcurrencyOnJVM(args: String*) = {
 </pre>
 </details>
 <details>
-<summary>kumasora</summary>
+<summary>kumasora(osu! storyboard)</summary>
 <pre>
 <code>
 // kumasora programming lesson
