@@ -452,7 +452,13 @@ def ProducerConsumerLevel3(args: String*) = {
 </details>
 
 ---
-### Usefull Link
 
+### Reference
+
+- [Gorilla's development environment introduction](https://docs.google.com/presentation/d/1ljSlJf20f6rHmjAnXY92Cn_Pmi7FyWxvB5lBIWHvVzg/edit?usp=sharing)
+- [Gorilla in compass](https://connpass.com/user/sho19921005/)
+
+### Usefull Link
+* [RPScala](https://github.com/rpscala/docs/wiki)
 * <https://codesandbox.io/>
 * <http://krypted.com/mac-security/command-line-firewall-management-in-os-x-10-10/>
