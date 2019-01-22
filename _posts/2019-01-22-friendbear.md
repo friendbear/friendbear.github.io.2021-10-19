@@ -224,6 +224,8 @@ Capturing on 'Wi-Fi'
 
 ### Install Software
 - `brew cask install macdown`
+- Coda2
+- Transmit
 
 ### Try Scala
 - RockScalaAdvanced

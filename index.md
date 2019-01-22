@@ -2,14 +2,19 @@
 layout: default
 ---
 
-# May be underconstruction 
+# I'm sorry. May be underconstruction 
+
 
 ## Contents
+
 * [Blog](/blog)
 * [About Me](/about.html)
 
 ### This Page is generate by [Jekyllrb](https://jekyllrb.com)
 
+* This site choice's  themes is here [jekyllrb theme](https://github.com/mattvh/jekyllthemes/)
+
+--- 
 
 ### Writing Format is Markdown
 Text can be **bold**, _italic_, or ~~strikethrough~~.
