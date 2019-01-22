@@ -36,7 +36,7 @@ https://github.com/jedisct1/dnscrypt-proxy
   Poured from bottle on 2019-01-15 at 09:27:12
 From: https://github.com/Homebrew/homebrew-core/blob/master/Formula/dnscrypt-proxy.rb
 ==> Dependencies
-Build: go ✔
+Build: go âœ”
 ==> Options
 --HEAD
 	Install HEAD version
@@ -105,7 +105,7 @@ Capturing on 'Wi-Fi'
 
 ### Try Scala
 - RockScalaAdvanced
-
+  -  JVM Thread Communication
 
 <details>
 <summary>Snippet</summary>
@@ -113,148 +113,112 @@ Capturing on 'Wi-Fi'
 <code>
 #!/usr/bin/env amm
 @main
-def monads(args: String*) = {
-  // our own Try monad
-  trait Attempt[+A] {
-    def flatMap[B](f: A => Attempt[B]): Attempt[B]
-  }
-
-  object Attempt {
-    def apply[A](a: => A): Attempt[A] = // call by name
-      try {
-        Success(a)
-      } catch {
-        case e: Throwable => Fail(e)
-      }
-  }
-
-  case class Success[+A](value: A) extends Attempt[A] {
-    def flatMap[B](f: A => Attempt[B]): Attempt[B] =
-      try {
-        f(value)
-      } catch {
-        case e: Throwable => Fail(e)
-      }
-  }
-
-  case class Fail(e: Throwable) extends Attempt[Nothing] {
-    def flatMap[B](f: Nothing => Attempt[B]): Attempt[B] = this
-  }
-
+def ThreadCommunication(args: String*) = {
   /*
-   * left-identity
-   *
-   * unit.flatMap(f) = f(x)
-   * Attempt(x).flatMap(f) = f(x) // Success case!
-   * Success(x).flatMap(f) = f(x) // proved.
-   *
-   * right-identity
-   *
-   * attempt.flatMap(unit) = attempt
-   * Success(x).flatMap(x => Accept(x)) = Accept(x) = Success(x)
-   *
-   * Fail(e).flatMap(...) = Fail(e)
-   *
-   * associativity
-   *
-   * attempt.flatMap(f).flatMap(g) == attempt.flatMap(x => f(x).flatMap(g))
-   * Fail(e).flatMap(f).flatMap(g) = Fail(e)
-   * Fail(e).flatMap(x => f(x).flatMap(g)) + Fail(e)
-   *
-   * Success(v).flatMap(f).flatMap(g) =
-   *   f(v).flatMap(g) OR Fail(e)
-   *
-   * Success(v).flatMap(x => f(x).flatMap(g)) =
-   *   f(v).flatMap(g) OR Fail(e)
-   */
+    the producer-consumer problem
 
-  val attempt = Attempt {
-    throw new RuntimeException("My own monad, yes!")
+    producer -> [ ? ] -> consumer
+  */
+  class SimpleContainer {
+    private var value: Int = 0
+
+    def isEmpty: Boolean = value == 0
+    def set(newValue: Int) = value = newValue
+    def get = {
+      val result = value
+      value = 0
+      result
+    }
   }
 
-  println(attempt)
+  lazy val naive = {
+    def naiveProdCons(): Unit = {
+      val container = new SimpleContainer
 
-  /*
-    EXERCISE:
-    1) implement a Lazy[T] monad = computation which will only be executed when it's needed.
+      val consumer = new Thread(() => {
+        println("[consumer] waiting...")
+        while (container.isEmpty) {
+          println("[consumer] actively waiting...")
+        }
+        println("[consumer] I have consumed " + container.get)
+      })
 
-    unit/apply
-    flatMap
-   */
-  // 1 - Lazy monad
-  class Lazy[+A](value: => A) {
-    // call by need
-    private lazy val internalValue = value
-    def use: A = internalValue
-    def flatMap[B](f: (=>A) => Lazy[B]): Lazy[B] = f(internalValue)
+      val producer = new Thread(() => {
+        println("[producer] computing...")
+        Thread.sleep(500)
+        val value = 42
+        println("[producer] I have produced, after long work, the value" + value)
+        container.set(value) // Change isEmpty => True
+      })
+
+      consumer.start
+      producer.start
+    }
+    naiveProdCons()
   }
-  object Lazy {
-    def apply[A](value: =>A): Lazy[A] = new Lazy(value)
-  }
-  val lazyInstance = Lazy {
-    println("Today I don't feel like doing anything")
-    42
-  }
 
-  println(lazyInstance.use)
+  // wait and notify
+  lazy val smart = {
+    /*
+      Synchronized
+      val someObject = "hello'
+      someObject.synchronized {
+        // code
+      }
 
-  val flatMappedInstance = lazyInstance.flatMap(x => Lazy {
-    10 * x
-  })
-  val flatMappedInstance2 = lazyInstance.flatMap(x => Lazy {
-    10 * x
-  })
-  flatMappedInstance.use
-  flatMappedInstance2.use
-}
+
+      wait() and notify()
+
+      // thread 1
+      val someObject = "hello"
+      someObject.synchronized {
+        // code part 1
+        someObject.wait()
+        // code part 2
+      }
+
+      // thread 2
+      someObject.synchronized {
+        // code
+        someObject.notify()
+      }
+
+     */
+    def smartProdCons() = {
+      val container = new SimpleContainer
+      val consumer = new Thread(() => {
+        println("[consumer] waiting...")
+        container.synchronized{
+          container.wait()
+        }
+
+        // container must have some value
+        println("[consumer] I have consumed " + container.get)
+      })
+
+      val producer = new Thread(() => {
+        println("[producer] Hard at work...")
+        Thread.sleep(2000)
+        val value = 42
+
+        container.synchronized {
+          println("[producer] I'm producing " + value)
+          container.set(value)
+          container.notify()
+        }
+      })
+      consumer.start
+      producer.start
+    }
+    smartProdCons()
+  }
 </code>
 
 <code>
 #!/usr/bin/env amm
 @main
 def ConcurrencyOnJVM(args: String*) = {
-  /**
-    * Exercises
-    * 1) Construct 50 "inception" threads
-    *     Thread1 -> Thread2 -> Thread3 -> ...
-    *     println("hello from thread #3)
-    *   in REVERSE ORDER
-    */
-  {
-    def inceptionThreads(maxThreads: Int, i: Int = 1): Thread = new Thread(() => {
-      if (i < maxThreads) {
-        val newThread = inceptionThreads(maxThreads, i + 1)
-        newThread.start()
-        newThread.join()
-      }
-      println(s"Hello from thread $i")
-    })
 
-    inceptionThreads(50).start()
-  }
-
-  /*
-   * 2
-   */
-  var x = 0
-  val threads = (1 to 100).map(_ => new Thread(() => x += 1))
-  threads.foreach(_.start())
-
-  /*
-   * 1) what is the biggest value possible for x? 100
-   * 2) what is the  SMALLEST value possible for x? 1
-   *
-   * thread1: x = 0
-   * thread2: x = 0
-   * ....
-   * thread100: x = 0
-   *
-   * for all threads: x = 1 and write it back to x
-   */
-
-  println(x)
-  threads.foreach(_.join())
-  println(x)
 }
 </code>
 </pre>
