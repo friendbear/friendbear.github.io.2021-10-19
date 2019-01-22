@@ -222,6 +222,31 @@ Capturing on 'Wi-Fi'
 ### Setup CRM
 - HubSpot
 
+### kumasora programming lesson
+- .NET.CORE 
+- VSCode
+  - `dotnet build`
+  - `dotnet run`
+
+- dotnet command reference
+```shell
+コマンド     関数
+dotnet build     .NET Core アプリケーションをビルドします。
+dotnet build-server     ビルドによって起動されたサーバーとやり取りします。
+dotnet clean     クリーン ビルド出力です。
+dotnet help     コマンドのより詳細なドキュメントをオンラインで表示します。
+dotnet migrate     有効な Preview 2 プロジェクトを .NET Core SDK 1.0 プロジェクトに移行します。
+dotnet msbuild     MSBuild コマンド ラインへのアクセスを提供します。
+dotnet new     指定されたテンプレートの C# または F# プロジェクトを初期化します。
+dotnet pack     コードの NuGet パッケージを作成します。
+dotnet publish     .NET Framework に依存するアプリケーションまたは自己完結型アプリケーションを発行します。
+dotnet restore     指定されたアプリケーションの依存関係を復元します。
+dotnet run     ソースからアプリケーションを実行します。
+dotnet sln     ソリューション ファイルのプロジェクトを追加、削除、一覧表示するオプション。
+dotnet store     ランタイム パッケージ ストアにアセンブリを格納します。
+dotnet test     テスト ランナーを使用してテストを実行します。
+```
+
 ### Install Software
 - `brew cask install macdown`
 - Coda2
@@ -439,16 +464,37 @@ def ProducerConsumerLevel3(args: String*) = {
 
   
 <summary>kumasora(osu! storyboard)</summary>
+<https://masuqat.net/programming/csharp/OpenTKindex.php>
 <pre>
 <code>
 // kumasora programming lesson
+using OpenTK;
+using OpenTK.Graphics;
+using StorybrewCommon.Mapset;
+using StorybrewCommon.Scripting;
+using StorybrewCommon.Storyboarding;
+using StorybrewCommon.Storyboarding.Util;
+using StorybrewCommon.Subtitles;
+using StorybrewCommon.Util;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace StorybrewScripts
+{
+    public class Black : StoryboardObjectGenerator
+    {
+        public override void Generate()
+        {
             var layer = GetLayer("TEST");
             var BG = layer.CreateSprite("back.png", OsbOrigin.Centre);
 
             BG.Scale(0, 10000, 2, 2);
             BG.Fade(0, 2000, 0, 10);
             BG.Fade(8000, 10000, 10, 0);
-
+        }
+    }
+}
 </code>
 </pre>
 </details>
