@@ -84,6 +84,72 @@ dnscrypt- 16387 nobody   14u  IPv6 0xc0d1987dc8b2bfb      0t0  UDP [::1]:5355
 Try again
 <https://github.com/drduh/macOS-Security-and-Privacy-Guide#dnsmasq>
 
+#### Check Firewall
+```shell
+ /usr/libexec/ApplicationFirewall/socketfilterfw --listapps
+ALF: total number of apps = 7
+
+1 :  /Library/Java/JavaVirtualMachines/amazon-corretto-8.jdk/Contents/Home/bin/java
+ 	 ( Allow incoming connections )
+```
+
+```shell
+$ scutil --dns | head
+DNS configuration
+
+resolver #1
+  nameserver[0] : 127.0.0.1
+  flags    : Request A records, Request AAAA records
+  reach    : 0x00030002 (Reachable,Local Address,Directly Reachable Address)
+
+resolver #2
+  domain   : local
+  options  : mdns
+ k22  m6  ~  Posts  master  $ 
+ networksetup -getdnsservers "Wi-Fi"
+127.0.0.1
+ k22  m6  ~  Posts  master  $ 
+ dig +dnssec icann.org
+
+; <<>> DiG 9.10.6 <<>> +dnssec icann.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 62152
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags: do; udp: 4096
+;; QUESTION SECTION:
+;icann.org.			IN	A
+
+;; ANSWER SECTION:
+icann.org.		599	IN	A	192.0.43.7
+icann.org.		599	IN	RRSIG	A 7 2 600 20190203113621 20190113072110 37170 icann.org. PLr/I2F3vtEl7ehskLkj3oBtFkzdeqV7gbmD7Jz5E+4YVdaMiMynQpKu F7hf5EIlUcGbqWIuPyvPX/u7EAET9FiAox5oDNvm+0CU8RIaCTyhkly3 Z6CbOrqjwEe2uQ8wAIfdanhgMqfQ7YYGz0k/jsEAoZQoahCYGcMHDXWl GfQ=
+
+;; Query time: 209 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Tue Jan 22 15:18:41 JST 2019
+;; MSG SIZE  rcvd: 241
+
+$ dig www.dnssec-failed.org
+
+; <<>> DiG 9.10.6 <<>> www.dnssec-failed.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 64166
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1252
+;; QUESTION SECTION:
+;www.dnssec-failed.org.		IN	A
+
+;; Query time: 389 msec
+;; SERVER: 127.0.0.1#53(127.0.0.1)
+;; WHEN: Tue Jan 22 15:19:39 JST 2019
+;; MSG SIZE  rcvd: 50
+```
+
 ### Install Wireshark
 ```shell
 $ tshark -Y "http.request or http.response" -Tfields   -e ip.dst   -e http.request.full_uri   -e http.request.method   -e http.response.code   -e http.response.phrase   -Eseparator=/s
@@ -218,13 +284,100 @@ def ThreadCommunication(args: String*) = {
 <code>
 #!/usr/bin/env amm
 @main
-def ConcurrencyOnJVM(args: String*) = {
+def ProducerConsumerLevel3(args: String*) = {
+ /*
+    Prod-cons, level 3
 
+      producer1 -> [ ? ? ? ] =-> consumer1
+      producer2 ----^     ^----- consumer2
+   */
+
+  class Consumer(id: Int, buffer: mutable.Queue[Int]) extends Thread {
+    override def run(): Unit = {
+      val random = new Random()
+
+      while(true) {
+        buffer.synchronized({
+          /*
+            producer produces value. two Cons are waiting
+            notifies ONE consumer,notifies on buffer
+            notifies the other consumer
+
+           */
+          /*
+          [consumer 1] buffer empty, waiting ...
+          [consumer 3] buffer empty, waiting ...
+          [consumer 2] buffer empty, waiting ...
+          [producer 1] producing 0
+          [consumer 1] consumed 0
+          [producer 3] producing 0
+          Exception in thread "Thread-2" [producer 2] producing 0
+          [consumer 2] consumed 0
+          java.util.NoSuchElementException: queue empty
+            at scala.collection.mutable.Queue.dequeue(Queue.scala:67)
+            at concurrency.ProducerConsumerLevel3$Consumer.run(ProducerConsumerLevel3.scala:39)
+          [producer 2] producing 1
+          why ?
+            🔴 This is Point not if use while 🔴
+           */
+          while (buffer.isEmpty) {
+            println(s"[consumer $id] buffer empty, waiting ...")
+            buffer.wait()
+          }
+
+          // there must be at least ONE value in the buffer
+          val x = buffer.dequeue() // OOps.!
+          println(s"[consumer $id] consumed " + x)
+
+          // hey producer, there's empty space available, are you lazy?
+          buffer.notify()
+        })
+
+        Thread.sleep(random.nextInt(500))
+      }
+    }
+  }
+
+  class Producer(id: Int, buffer: mutable.Queue[Int], capacity: Int) extends Thread {
+    override def run(): Unit = {
+      val random = new Random()
+      var i = 0
+      while (true) {
+        buffer.synchronized {
+          while (buffer.size == capacity) {
+            println(s"[producer $id] buffer is full, waiting...")
+            buffer.wait()
+          }
+          // there must be at least ONE EMPTY SPACE in the buffer
+          println(s"[producer $id] producing " + i)
+          buffer.enqueue(i)
+
+          //todo hey consumer, new food for you!
+          buffer.notify()
+          i += 1
+        }
+        Thread.sleep(random.nextInt(500))
+      }
+    }
+  }
+
+  def multiProdCons(nConsumers: Int, nProducers: Int) = {
+    val buffer: mutable.Queue[Int] = new mutable.Queue[Int]
+    val capacity = 3
+
+    (1 to nConsumers).foreach(i => new Consumer(i, buffer).start())
+    (1 to nProducers).foreach(i => new Producer(i, buffer, capacity).start())
+  }
+
+  multiProdCons(3, 3)
 }
 </code>
 </pre>
 </details>
 <details>
+
+---
+  
 <summary>kumasora(osu! storyboard)</summary>
 <pre>
 <code>
