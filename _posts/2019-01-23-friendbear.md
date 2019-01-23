@@ -5,11 +5,12 @@ title: Vim
 ---
 
 ### Vim 
-- [SpaceVim](https://github.com/SpaceVim/SpaceVim)
 
 
 ### Install Software
-[jq replaced fx](https://github.com/antonmedv/fx)
+- [SpaceVim](https://github.com/SpaceVim/SpaceVim)
+
+- [jq replaced fx](https://github.com/antonmedv/fx)
 
 ```shell
   Examples
@@ -52,7 +53,7 @@ def ProducerConsumerLevel3(args: String*) = {
 </details>
 <details>
 
-  
+    
 <summary>kumasora(osu! storyboard)</summary>
 <pre>
 <code>
@@ -67,5 +68,4 @@ def ProducerConsumerLevel3(args: String*) = {
 
 ### Usefull Link
 <https://github.blog/2019-01-20-release-radar-december-2018/>
-brew install fx)
 ### Recommend
