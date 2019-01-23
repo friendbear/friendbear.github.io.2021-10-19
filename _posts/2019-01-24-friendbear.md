@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title: Vim
+title: Developer account approved and other
 ---
 
 ### Twitter Developer account approved 
