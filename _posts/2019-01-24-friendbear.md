@@ -35,6 +35,8 @@ export NNN_COPIER="$HOME/Bin/copier.sh"
 export NNN_NOTE="$HOME/.mynotes"
 ```
 
+* see
+<https://github.com/jarun/nnn/wiki/How-to>
 
 Usage:
 ```
