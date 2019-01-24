@@ -413,5 +413,8 @@ def FuturesPromisesOnlineBanking(args: String*) = {
 
 ### Usefull Link
 - <https://service.visasq.com>
+- [3D Go City](https://go-city.github.io/#/github.com/skanehira/docui)
+- [mojave wallpapper](https://github.com/mczachurski/wallpapper)
+- [Git moji](https://github.com/carloscuesta/gitmoji/)
 
 ### Recommend
