@@ -21,3 +21,4 @@ $ brew services start privoxy
 
 ### New Application
 [BitBar](https://github.com/matryer/bitbar)
+- [Tutorial](https://computers.tutsplus.com/tutorials/customize-the-menu-bar-with-bitbar--cms-26946)
