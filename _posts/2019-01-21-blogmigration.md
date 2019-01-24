@@ -1,6 +1,6 @@
 ---
 auther: friendbear
-title: Import from WordPress.com
+title: About Import from WordPress.com
 ---
 
 ### Migration from WordPress.com to jekyllrb

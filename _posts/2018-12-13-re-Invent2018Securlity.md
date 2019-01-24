@@ -1,7 +1,7 @@
 ---
 layout: post
 auther: freindbear
-title: Seculity re:Invent 2018 OSAKA
+title: Seculity AWS re:Invent 2018 OSAKA
 ---
 
 ## Seculity

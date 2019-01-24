@@ -1,36 +1,39 @@
 ---
 layout: post
 author: friendbear
+title: Start Blog on pages.github.com
 ---
 
-### Start This Blog
+## Start This Blog
 
 ### Join Slack
-<https://github.com/prisma>
+[prisma](https://github.com/prisma)
 
 ### gocui
 - Makefile test and review
 
-### Mod github.io
-
+### Create my.github.io
 - pages.github.io の選択できるテーマの元を調べてclone
 - jekyll Rubyの仕組みを調査
-    <https://jekyllrb.com/docs/step-by-step>
-- Blog on Disqus <https://desiredpersona.com/disqus-comments-jekyll/>
-  ref <https://stackoverflow.com/questions/21446165/how-do-i-use-disqus-comments-in-github-pages-blog-markdown>
+  - <https://jekyllrb.com/docs/step-by-step>
+  - ref <https://stackoverflow.com/questions/21446165/how-do-i-use-disqus-comments-in-github-pages-blog-markdown>
 
-### GIthub
+- Blog on Disqus
+  - <https://desiredpersona.com/disqus-comments-jekyll/>
+
+
+### GitHub
 - Star
   - [An online code editor tailored for web application development](https://codesandbox.io)
   - [Prisma enables seamless type-safe database access & declarative data modeling](https://www.prisma.io)
   - [Architect is a Jekyll theme for GitHub Pages](https://pages-themes.github.io/archititect)
 
 ### Good by Powerpoint 
+- <https://github.com/yhatt/marp/>
+  - `brew cask install marp`
 
-<https://github.com/yhatt/marp/>
-- `brew cask install marp`
-
-```raw
+#### Example (Raw Markdown)
+```markdown
 <!-- $theme: gaia -->
 
 # Introducing ==Gaia== theme
@@ -70,9 +73,6 @@ Select menu: *View :arrow_right: Theme :arrow_right: Gaia*
 
 Set `gaia` theme by `$theme` Global Directive.
 
-```
-<!-- $theme: gaia -->
-```
 
 ---
 
@@ -91,9 +91,6 @@ Set `gaia` theme by `$theme` Global Directive.
 
 # Basic example 2
 
-```javascript
-document.write('Hello, world!');
-```
 
 |table|layout|example|
 |:--|:-:|--:|
@@ -134,9 +131,6 @@ document.write('Hello, world!');
 
 You can use `==` for ==highlighting blue==.
 
-```markdown
-==This is highlight markup.==
-```
 
 #### Notice
 
@@ -151,9 +145,6 @@ You can use `==` for ==highlighting blue==.
 
 Change color scheme *by `template` page directive.*
 
-```
-<!-- template: default -->
-```
 
 - **Default** :arrow_left: This page
 - Invert
@@ -165,9 +156,6 @@ Change color scheme *by `template` page directive.*
 
 Change color scheme *by `template` page directive.*
 
-```
-<!-- template: invert -->
-```
 
 - Default
 - **Invert** :arrow_left: This page
@@ -179,9 +167,7 @@ Change color scheme *by `template` page directive.*
 
 Change color scheme *by `template` page directive.*
 
-```
 <!-- template: gaia -->
-```
 
 - Default
 - Invert

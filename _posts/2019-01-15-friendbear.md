@@ -1,6 +1,7 @@
 ---
 layout: post
 author: friendbear
+title: Security
 ---
 
 ### 全体的にセキュリティー強化

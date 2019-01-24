@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title: 01/21 Scala and other Try Log
+title:  Scala and other Try Log
 ---
 
 ### Try Scala

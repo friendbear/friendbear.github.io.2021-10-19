@@ -1,7 +1,7 @@
 ---
 layout: post
 auther: freindbear
-title: Computing re:Invent 2018 OSAKA
+title: Computing AWS re:Invent 2018 OSAKA
 ---
 
 ## Computing
@@ -51,7 +51,7 @@ VPCピアリングしなければならなかった -> Transit Gatewayでどこ�
 VPC
 VPN
 AWS Direct Connect
-->Transit Gateway
+- Transit Gateway
 
 AWS Private Link (1..n)
 AWS Transit Gateway (n..n)

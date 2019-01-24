@@ -1,6 +1,7 @@
 ---
 layout: post
 author: friendbear
+title: My Topics
 ---
 
 ### Topics

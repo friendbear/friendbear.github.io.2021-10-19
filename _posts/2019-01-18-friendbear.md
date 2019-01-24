@@ -1,6 +1,7 @@
 ---
 layout: post
 author: friendbear
+title: New Software and Try Scala
 ---
 
 ### gocui

@@ -3,9 +3,9 @@ layout: post
 auther: freindbear
 title: Meet up AWS Loft Tokyo start up event
 ---
-# AWS Loft Tokyo 午後の部
+## AWS Loft Tokyo 午後の部
 
-## チームビルディング
+### チームビルディング
 12:00〜
 
 Microservicesな開発サイクル
@@ -13,7 +13,7 @@ Microservicesな開発サイクル
 * 組織と技術が密接に関連している。チーム=サービス
 ２ッピサチーム
 
-## イノベーションのための組織作り
+### イノベーションのための組織作り
 * セルフサービス
 * テクノロシーにとらわれない
 * ベストプラクティスを促進
@@ -125,10 +125,5 @@ Microservicesな開発サイクル
 我々はこの先の長い道のりから見るとStill Day One（まだ１日目）
 まだ朝食も食べていません。
 ```
-
-
-
-
-## Amazon Pay
 
 

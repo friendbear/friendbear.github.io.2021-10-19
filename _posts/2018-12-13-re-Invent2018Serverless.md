@@ -1,7 +1,7 @@
 ---
 layout: post
 auther: freindbear
-title: Serverless re:Invent 2018 OSAKA
+title: Serverless AWS re:Invent 2018 OSAKA
 ---
 
 ## Serverless

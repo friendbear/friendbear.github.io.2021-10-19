@@ -1,12 +1,12 @@
 ---
 layout: post
 author: friendbear
-title: 01/22 JDK on Amazon, Security, CRM Setup, and other
+title:  JDK on Amazon, Security, CRM Setup, and other
 ---
 
 ### Java Tips
 - [Amazon Corretto](https://docs.aws.amazon.com/ja_jp/corretto/latest/corretto-8-ug/downloads-list.html)
-    - twitter support
+    - twitter user support
 
 ### Security 
 - DNS Hosts file

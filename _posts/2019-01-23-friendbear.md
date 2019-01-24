@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title: Vim and other
+title: new Vim and other
 ---
 
 ### Vim 
