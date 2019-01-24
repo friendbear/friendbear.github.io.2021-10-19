@@ -23,6 +23,19 @@ title: Developer account approved and other
 ### Install Software
 [nnn](https://github.com/jarun/nnn)
 
+* dotfile
+```sh
+# nnn
+# https://github.com/jarun/nnn/wiki/How-to
+export NNN_BMS='o:~/Develop;O:~/Posts;7:~/Develop/Scala'
+export NNN_CONTEXT_COLORS='6534'
+export NNN_USE_EDITOR=1
+export NNN_SHOW_HIDDEN=1
+export NNN_COPIER="$HOME/Bin/copier.sh"
+export NNN_NOTE="$HOME/.mynotes"
+```
+
+
 Usage:
 ```
 usage: nnn [-b key] [-C] [-e] [-i] [-l]
