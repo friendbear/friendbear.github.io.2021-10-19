@@ -85,7 +85,7 @@ Keyboad shortcuts (Press ?)
   - Thread communication Exercise
   - Futures [onComplete] PartialFunction[Success, Failure]
   - Futures, Part2(mini social network)
-    - Future.[map|flatMap|filter]
+    - Future.[map,flatMap,filter]
     - for-comprehensions
     - recover, recoverWith, fallbackTo
   - Futures, Part3(Online Banking) and promise
