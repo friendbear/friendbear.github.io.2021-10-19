@@ -2,6 +2,7 @@ title: bearsworld
 description: for GitHub Pages.
 show_downloads: true
 google_analytics: UA-37353976-2
+twitter: true
 hubspot: true
 theme: jekyll-theme-architect
 -- paginate: 5
