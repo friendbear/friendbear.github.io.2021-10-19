@@ -383,6 +383,10 @@ def FuturesPromisesOnlineBanking(args: String*) = {
   Thread.sleep(1000)
 }
 
+</code>
+</pre>
+</details>
+
 ### kumasora
 - Setting
   - <https://github.com/kumasora>
