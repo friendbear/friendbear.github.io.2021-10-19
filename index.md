@@ -24,11 +24,32 @@ layout: default
 [DevOps Enginner 2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png)
 
 
-### Scala
+## Scala Lang
+- [Scala org](https://www.scala-lang.org/)
+- [sbt](https://www.scala-sbt.org/)
+- [ScalaTest](http://www.scalatest.org)
 - [mongoDB](http://mongodb.github.io/mongo-scala-driver/)
 - [Apache Spark](http://spark.apache.org/)
+- [Scala Scripts](http://ammonite.io/)
+- [Ammonite-REPL](http://ammonite.io/)
+- [Scala Kernel](https://almond.sh/docs/intro)
 
-### Writing Format is Markdown
+```sh
+SCALA_VERSION=2.12.8 ALMOND_VERSION=0.2.1
+coursier bootstrap \
+     -r jitpack \
+     -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
+     sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
+     --sources --default=true \
+     -o almond
+```
+
+## elastic
+- [Elasticsearch](https://www.elastic.co/)
+
+---
+
+## Writing Format is Markdown
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
