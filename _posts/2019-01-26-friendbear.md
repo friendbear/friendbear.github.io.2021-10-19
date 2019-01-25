@@ -309,6 +309,7 @@ def ImplicitOrdering(args: String*) = {
 </pre>
 </details>
 <details>
+<summary>TypeClass</summary>
 <pre>
 <code>
 #!/usr/bin/env amm
@@ -394,5 +395,5 @@ def TypeClass(args: String*) = {
 ### Reference
 
 ### Usefull Link
-
+[Git Command Explorer][https://gitexplorer.com/]
 ### Recommend

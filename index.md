@@ -18,10 +18,15 @@ layout: default
 
 ## Roadmap
 
-[BackEnd Enginner2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/backend.png)
+[BackEnd Enginner 2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/backend.png)
 
 
-[DevOps Enginner2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png)
+[DevOps Enginner 2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png)
+
+
+### Scala
+- [mongoDB](http://mongodb.github.io/mongo-scala-driver/)
+- [Apache Spark](http://spark.apache.org/)
 
 ### Writing Format is Markdown
 Text can be **bold**, _italic_, or ~~strikethrough~~.
