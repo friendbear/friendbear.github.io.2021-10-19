@@ -7,8 +7,12 @@ title: None
 ### AWS podcast
 <https://aws.amazon.com/jp/podcasts/aws-podcast/?sc_channel>
 
+### Add application VARK on Oculus GO
+<https://vark.co.jp/>
+
 ### Try Scala
 - RockScalaForAdvanced
+  - Futures, Part 4 + Exercises
 
 <details>
 <summary>Snippet</summary>
@@ -34,22 +38,11 @@ def FuturesPromises(args: String*) = {
 </pre>
 </details>
 <details>
-<summary>mini socialNetwork</summary>
+<summary>-</summary>
 <pre>
 <code>
 #!/usr/bin/env amm
 
-import scala.concurrent.Future
-import scala.util.{Failure, Random, Success}
-import scala.concurrent.ExecutionContext.Implicits.global
-
-/**
-  * A Taste of Advanced Scala
-  * Functional Concurrent Programming
-  *
-  * - Futures, Part2(mini social network)
-  *
-  */
 @main
 def FuturesPromisesSocialNetwork(args: String*) = {
 }
@@ -57,14 +50,10 @@ def FuturesPromisesSocialNetwork(args: String*) = {
 </pre>
 </details>
 <details>
-<summary>FuturesPromisesOnlineBanking</summary>
+<summary>-</summary>
 <pre>
 <code>
 #!/usr/bin/env amm
-import scala.concurrent.{Await, Future, Promise}
-import scala.util.Success
-
-import scala.concurrent.ExecutionContext.Implicits.global
 
 @main
 def FuturesPromisesOnlineBanking(args: String*) = {
@@ -75,11 +64,6 @@ def FuturesPromisesOnlineBanking(args: String*) = {
 </details>
 
 ### kumasora
-- Setting
-  - <https://github.com/kumasora>
-  - Slack
-
----
 
 ### Reference
 
