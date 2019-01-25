@@ -14,6 +14,17 @@ title: Future Promise Very Important Training
       - synchronization
       - alternatives
     - atomic ops and references
+  - Enter Implicits
+  - Ordering Implicits
+  - TypeClasses
+    - trait HTMLSerializer[T] vs trait HTMLWritable
+    - TYPE CLASS
+
+```scala
+trait MyTypeClassTemplate[T] {
+  def action(value: T): String
+}
+```
 
 <details>
 <summary>FuturesPromisesFinal</summary>
