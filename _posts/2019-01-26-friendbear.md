@@ -8,6 +8,12 @@ title: Future Promise Very Important Training
 ### Try Scala
 - RockScalaForAdvanced
   - Futures, Part4 + Exercises
+  - Scala & JVM Standard Parallel Libraries
+    - parallel collections (par, Par)
+      - Map-reduce model
+      - synchronization
+      - alternatives
+    - atomic ops and references
 
 <details>
 <summary>FuturesPromisesFinal</summary>
@@ -152,12 +158,37 @@ def FuturesPromisesFinal(args: String*) = {
 </details>
 
 <details>
-<summary>FuturesPromises</summary>
+<summary>AtomicReference</summary>
 <pre>
 <code>
 #!/usr/bin/env amm
 @main
-def FuturesPromises(args: String*) = {
+def AtomicReference(args: String*) = {
+  // 2 - atomic ops and references
+
+  val atomic = new AtomicReference[Int](2)
+  val atomicList = List(
+    atomic.get(), // thread-safe read
+    atomic.set(4), // thread-safe write
+    atomic.getAndSet(5), // thread safe combo
+    atomic.compareAndSet(38, 56), // if the value is 38, then set to 56
+    atomic.updateAndGet(_ + 1),
+    atomic.getAndUpdate(_ + 1),
+    atomic.accumulateAndGet(12, _ + _),
+    atomic.getAndAccumulate(12, _ + _),
+    atomic.get()
+  ).filter(_ != ())
+  atomicList.foreach(println)
+  /*
+    2
+    4
+    false
+    6
+    6
+    19
+    19
+    31
+  */
 }
 </code>
 </pre>
