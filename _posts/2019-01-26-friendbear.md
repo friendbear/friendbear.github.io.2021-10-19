@@ -194,27 +194,197 @@ def AtomicReference(args: String*) = {
 </pre>
 </details>
 <details>
-<summary>-</summary>
+<summary>ImplicitInto</summary>
 <pre>
 <code>
 #!/usr/bin/env amm
 
 @main
-def FuturesPromisesSocialNetwork(args: String*) = {
+def ImplicitInto(args: String*) = {
+  // tuples
+  /*
+    implicit final class ArrowAssoc[A](private val self: A) extends AnyVal {
+      @inline def -> [B](y: B): Tuple2[A, B] = Tuple2(self, y)
+      def →[B](y: B): Tuple2[A, B] = ->(y)
+    }
+   */
+  var pair = "Daniel" -> "555"
+  val intPair = 1 -> 2
+
+  case class Person(name: String) {
+    def greet = s"Hi, my name is $name!"
+  }
+
+  implicit def fromStringToPerson(str: String): Person = Person(str)
+
+  println("Peter".greet)  // println(fromStringToPerson("Peter").greet)
+
+  /* Compile Error
+  class A {
+    def greet: Int = 2
+  }
+  implicit def fromStringToA(str: String): A = new A
+  */
+  def increment(x: Int)(implicit amount: Int) = x + amount
+  implicit val defaultAmount = 10
+
+  increment(2)
+  // NOT default argument
 }
 </code>
 </pre>
 </details>
 <details>
-<summary>-</summary>
+<summary>ImplicitOrdering</summary>
 <pre>
 <code>
 #!/usr/bin/env amm
 
 @main
-def FuturesPromisesOnlineBanking(args: String*) = {
+def ImplicitOrdering(args: String*) = {
+  implicit def reverseOrdering(): Ordering[Int] = Ordering.fromLessThan(_ > _)
+  implicit val normalOrdering: Ordering[Int] = Ordering.fromLessThan(_ < _)
+  println(List(1, 4, 5, 3, 2).sorted(normalOrdering))
+
+  // scala.Predef
+
+  /*
+    Implicits: (used as implicit parameters):
+      - val/var
+      - object
+      - accessor methods = defs with no parentheses
+   */
+
+  // Exercise
+  case class Person(name: String, age: Int)
+
+  val person = List(
+    Person("Steve", 30),
+    Person("Amy", 22),
+    Person("John", 66)
+  )
+
+  object AlphabeticNameOrdering {
+    implicit val alphabeticOrdering: Ordering[Person] =
+      Ordering.fromLessThan((x, y) => x.name.compareTo(y.name) < 0)
+  }
+  object AgeOrdering {
+    implicit val ageOrdering: Ordering[Person] = Ordering.fromLessThan((x, y) => x.age < y.age)
+  }
+
+  /*
+    Implicit scope
+    - normal scope = LOCAL SCOPE
+    - imported scope
+    - companions of all types involved in the method signature 🔴
+      - List
+      - Ordering
+      - all the types involved = A or any supertype
+   */
+  // def sorted[B >: A](implicit ord: Ordering[B]): List[B]
+  import AgeOrdering._
+  println(person.sorted) // => List(Person(Amy,22), Person(Steve,30), Person(John,66))
+
+  /*
+    Exercise.
+
+    - totalPrice = most used (%50)
+    - by unit count = 25%
+    - by unit price = 25%
+   */
+  case class Purchase(nUnits: Int, unitPrice: Double)
+  object Purchase {
+    implicit val totalPriceOrdering: Ordering[Purchase] = Ordering.fromLessThan((x, y) => x.nUnits * x.unitPrice > y.nUnits * y.unitPrice)
+  }
+
+  object UnitCountOrdering {
+    implicit val unitCostOrdering: Ordering[Purchase] = Ordering.fromLessThan(_.nUnits < _.nUnits)
+  }
+  object UnitPriceOrdering {
+    implicit val unitPriceOrdering: Ordering[Purchase] = Ordering.fromLessThan(_.unitPrice < _.unitPrice)
+  }
 }
 
+</code>
+</pre>
+</details>
+<details>
+<pre>
+<code>
+#!/usr/bin/env amm
+
+@main
+def TypeClass(args: String*) = {
+
+  trait HTMLWritable {
+    def toHtml: String
+  }
+
+  case class User(name: String, age: Int, email: String) extends HTMLWritable {
+    override def toHtml: String = s"<div>$name ($age yo) <a href=$email/> </div>"
+  }
+  User("John", 32, "john@rockthejvm.com").toHtml
+
+  /*
+    1 - for the type WE write
+    2 - ONE implementation out of quite a number
+   */
+  // option 2 - pattern matching
+  object HTMLSerializerPatternMatching {
+    def serializeToHtml(value: Any) = value match {
+      case User(n, a, e) => ()
+      case _ => ()
+    }
+  }
+  /*
+    1 - lost type safety => HTMLSerializerPatternMatching
+    2 - need to modify the code every time
+    3 - still ONE implementation
+   */
+  trait HTMLSerializer[T] {
+    def serialize(value: T): String
+  }
+  object UserSerializer extends HTMLSerializer[User] {
+    override def serialize(user: User): String =
+      s"<div>${user.name} (${user.age} yo) <a href=${user.email}/></div"
+  }
+
+  val john = User("John", 32, " john@rockthejvm.com")
+  println(UserSerializer.serialize(john))
+
+  // 1 - we can define serializers for other types
+  import java.util.Date
+  object DateSerializer extends HTMLSerializer[Date] {
+    override def serialize(date: Date): String = s"<div>${date.toString()}</div>"
+  }
+
+  // 2 - we can define MULTIPLE serializers
+  object PartialUserSerializer extends HTMLSerializer[User] {
+    def serialize(user: User): String = s"<div>${user.name}</div>"
+  }
+
+  // TYPE CLASS
+  trait MyTypeClassTemplate[T] {
+    def action(value: T): String
+  }
+
+  /**
+    * Equality
+    */
+  trait Equal[T] {
+    def apply(a: T, b: T): Boolean
+  }
+  object NameEquality extends Equal[User] {
+    override def apply(a: User, b: User): Boolean = a.name == b.name
+  }
+  object FullEquality extends Equal[User] {
+    override def apply(a: User, b: User): Boolean = a.name == b.name && a.email == b.email
+  }
+  val ken = User("Ken", 32, " ken@rockthejvm.com")
+  val bob = User("Bob", 42, " bob@rockthejvm.com")
+  println(NameEquality(ken, bob))
+  println(FullEquality(ken, bob))
+}
 </code>
 </pre>
 </details>
