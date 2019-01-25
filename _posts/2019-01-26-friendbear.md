@@ -26,6 +26,20 @@ trait MyTypeClassTemplate[T] {
 }
 ```
 
+
+### spacevim
+[documentation](https://spacevim.org/documentation/#core-pillars)
+
+### kumasora
+
+### Reference
+[Editor Config](https://editorconfig.org/)
+
+### Usefull Link
+[Git Command Explorer][https://gitexplorer.com/]
+
+### Recommend
+
 <details>
 <summary>FuturesPromisesFinal</summary>
 <pre>
@@ -401,10 +415,3 @@ def TypeClass(args: String*) = {
 </pre>
 </details>
 
-### kumasora
-
-### Reference
-
-### Usefull Link
-[Git Command Explorer][https://gitexplorer.com/]
-### Recommend
