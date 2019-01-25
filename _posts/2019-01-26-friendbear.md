@@ -40,6 +40,9 @@ trait MyTypeClassTemplate[T] {
 
 ### Recommend
 
+
+### Snippets
+
 <details>
 <summary>FuturesPromisesFinal</summary>
 <pre>
