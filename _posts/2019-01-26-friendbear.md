@@ -44,10 +44,11 @@ implicit object Equal {
 }
   
 // AD-HOC polymorphism
-Equal(bobInstance, jonInstance) => false
+//🔴 Equal(bobInstance, jonInstance) => false
 ```
 
 #### Docker sbt plugin
+
 * not working
 
 ```build.sbt
