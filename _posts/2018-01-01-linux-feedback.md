@@ -1,3 +1,9 @@
+---
+auther: friendbear
+title: linux 
+categories: [blog, linux]
+tags: [linux, systemd, network, kernel]
+
 ## 1.Linux
 
 ---
