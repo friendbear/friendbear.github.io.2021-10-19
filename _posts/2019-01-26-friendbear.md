@@ -25,6 +25,7 @@ tags: [lang-scala, vim, Docker]
     - TYPE CLASS
 
 * TypeClass Part1
+
 ```scala
 trait MyTypeClassTemplate[T] {
   def action(value: T): String
@@ -32,6 +33,7 @@ trait MyTypeClassTemplate[T] {
 ```
 
 * TypeClass Part2
+
 ```scala
 trait Equal[T] {
   def apply(a: T, b: T): Boolean
