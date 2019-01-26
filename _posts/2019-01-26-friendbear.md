@@ -32,7 +32,7 @@ trait MyTypeClassTemplate[T] {
 ```
 
 * TypeClass Part2
- ```scala
+```scala
 trait Equal[T] {
   def apply(a: T, b: T): Boolean
 }
