@@ -1,9 +1,9 @@
-—
+---
 layout: post
 title: AWS Black Belt Online Seminar Well-Arcitected
 categories: [AWS]
 tags: [Well-Arcitected]
-—
+---
 
 ## ショートカットシリーズ
 過去資料

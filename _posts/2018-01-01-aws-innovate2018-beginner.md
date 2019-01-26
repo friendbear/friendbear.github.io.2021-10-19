@@ -1,9 +1,9 @@
-—
+---
 layout: post
 title: AWS Innovate 2018 Beginner
 categories: [AWS]
 tags: [Beginner]
-—
+---
 
 ## AWS Innovate ビギナーズトラック
 
