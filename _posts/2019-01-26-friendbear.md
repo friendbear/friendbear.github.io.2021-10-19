@@ -21,14 +21,33 @@ tags: [lang-scala, vim, Docker]
   - TypeClasses
     - trait HTMLSerializer[T] vs trait HTMLWritable
     - TYPE CLASS
+  - TypeClasses, Part 2
+    - TYPE CLASS
 
+* TypeClass Part1
 ```scala
 trait MyTypeClassTemplate[T] {
   def action(value: T): String
 }
 ```
 
-#### Docker sbt
+* TypeClass Part2
+ ```scala
+trait Equal[T] {
+  def apply(a: T, b: T): Boolean
+}
+implicit object Equal {
+  def apply[T](a: T, b: T)(implicit equal: Equal[T]): Boolean =
+  equal.apply(a, b)
+}
+  
+// AD-HOC polymorphism
+Equal(bobInstance, jonInstance) => false
+```
+
+#### Docker sbt plugin
+* not working
+
 ```build.sbt
 // ref: https://sbt-native-packager.readthedocs.io/en/stable/formats/docker.html
 //      https://github.com/marcuslonnberg/sbt-docker
@@ -59,6 +78,9 @@ libraryDependencies += "com.spotify" % "docker-client" % "8.9.0"
 
 #### Update Metals 0.4
 
+### Upeate pages.github.com
+<https://jekyllrb.com/docs/posts/>
+
 ### spacevim
 [documentation](https://spacevim.org/documentation/#core-pillars)
 
@@ -67,6 +89,7 @@ libraryDependencies += "com.spotify" % "docker-client" % "8.9.0"
 ### Reference
 [Editor Config](https://editorconfig.org/)
 [ScalaDoc](https://docs.scala-lang.org/style/scaladoc.html)
+
 ### Usefull Link
 [Git Command Explorer](https://gitexplorer.com/)
 [elastic](https://www.elastic.co/jp/products)

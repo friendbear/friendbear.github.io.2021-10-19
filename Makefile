@@ -6,3 +6,9 @@ build:
 
 serve:
 	JEKYLL_ENV=production bundle exec jekyll serve --incremental
+
+themes:
+	bundle show
+
+change:
+	open $(bundle show minima)
