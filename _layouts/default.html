@@ -58,7 +58,21 @@ gtag('config', '{{ site.google_analytics }}');
               .tar.gz file
             </a>
           {% endif %}
-
+					<ul>
+					  {% for post in site.posts %}
+					    <li>
+					      <a href="{{ post.url }}">{{ post.title }}</a>
+					    </li>
+						{% endfor %}
+					</ul>
+          {% for category in site.categories %}
+          <h3>{{ category[0] }}</h3>
+          <ul>
+						{% for post in category[1] %}
+							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+					{% endfor %}
           {% if site.github.is_project_page %}
             <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
           {% endif %}
