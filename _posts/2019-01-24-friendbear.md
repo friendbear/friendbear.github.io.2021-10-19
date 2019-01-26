@@ -2,6 +2,8 @@
 layout: post
 author: friendbear
 title: Developer account approved and other
+categories: [blog]
+tags: [Twitter]
 ---
 
 ### Twitter Developer account approved 

@@ -2,6 +2,8 @@
 layout: post
 author: friendbear
 title: Future Promise Very Important Training and Docker
+categories: [blog, lang-scala, vim , etc]
+tags: [lang-scala, vim, Docker]
 ---
 
 
