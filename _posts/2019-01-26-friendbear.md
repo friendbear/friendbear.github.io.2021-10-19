@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title: Future Promise Very Important Training
+title: Future Promise Very Important Training and Docker
 ---
 
 
@@ -26,6 +26,35 @@ trait MyTypeClassTemplate[T] {
 }
 ```
 
+#### Docker sbt
+```build.sbt
+// ref: https://sbt-native-packager.readthedocs.io/en/stable/formats/docker.html
+//      https://github.com/marcuslonnberg/sbt-docker
+enablePlugins(sbtdocker.DockerPlugin, JavaAppPackaging)
+enablePlugins(DockerSpotifyClientPlugin)
+
+
+dockerfile in docker := {
+  val appDir: File = stage.value
+  val targetDir = "/app"
+
+  new Dockerfile {
+    from("openjdk:8-jre")
+    entryPoint(s"$targetDir/bin/${executableScriptName.value}")
+    copy(appDir, targetDir, chown = "daemon:daemon")
+  }
+}
+```
+
+```plugins.sbt
+// https://github.com/sbt/sbt-native-packager
+addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.3.16")
+
+// https://github.com/marcuslonnberg/sbt-docker
+addSbtPlugin("se.marcuslonnberg" % "sbt-docker" % "1.5.0")
+libraryDependencies += "com.spotify" % "docker-client" % "8.9.0"
+```
+
 #### Update Metals 0.4
 
 ### spacevim
@@ -39,6 +68,7 @@ trait MyTypeClassTemplate[T] {
 ### Usefull Link
 [Git Command Explorer](https://gitexplorer.com/)
 [elastic](https://www.elastic.co/jp/products)
+[sbt-native-packager](https://sbt-native-packager.readthedocs.io/en/stable/)
 
 ### Recommend
 
