@@ -26,6 +26,7 @@ trait MyTypeClassTemplate[T] {
 }
 ```
 
+#### Update Metals 0.4
 
 ### spacevim
 [documentation](https://spacevim.org/documentation/#core-pillars)
@@ -34,7 +35,7 @@ trait MyTypeClassTemplate[T] {
 
 ### Reference
 [Editor Config](https://editorconfig.org/)
-
+[ScalaDoc](https://docs.scala-lang.org/style/scaladoc.html)
 ### Usefull Link
 [Git Command Explorer](https://gitexplorer.com/)
 [elastic](https://www.elastic.co/jp/products)

@@ -31,9 +31,12 @@ layout: default
 - [mongoDB](http://mongodb.github.io/mongo-scala-driver/)
 - [Apache Spark](http://spark.apache.org/)
 - [Scala Scripts](http://ammonite.io/)
+- [Scala Native](http://www.scala-native.org/)
 - [Ammonite-REPL](http://ammonite.io/)
+- [LLVM](http://llvm.org/)
+- [Metals](https://scalameta.org/metals/)
 - [Scala Kernel](https://almond.sh/docs/intro)
-
+-
 ```sh
 SCALA_VERSION=2.12.8 ALMOND_VERSION=0.2.1
 coursier bootstrap \
@@ -43,6 +46,10 @@ coursier bootstrap \
      --sources --default=true \
      -o almond
 ```
+
+### Links
+[Qiita](https://qiita.com/tags/scala)
+
 
 ## elastic
 - [Elasticsearch](https://www.elastic.co/)
