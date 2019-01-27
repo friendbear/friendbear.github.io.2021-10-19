@@ -2,6 +2,8 @@
 layout: post
 author: friendbear
 title: new Vim and other
+categories: [vim]
+tags: [command]
 ---
 
 ### Vim 

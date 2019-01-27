@@ -2,6 +2,8 @@
 layout: post
 auther: freindbear
 title: Computing AWS re:Invent 2018 OSAKA
+categories: [AWS]
+tags: [re:Invent]
 ---
 
 ## Computing

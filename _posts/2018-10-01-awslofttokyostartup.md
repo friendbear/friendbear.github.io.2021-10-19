@@ -2,6 +2,8 @@
 layout: post
 auther: freindbear
 title: Meet up AWS Loft Tokyo start up event
+categories: [AWS]
+tags: [AWS]
 ---
 ## AWS Loft Tokyo 午後の部
 

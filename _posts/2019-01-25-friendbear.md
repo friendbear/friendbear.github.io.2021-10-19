@@ -3,7 +3,7 @@ layout: post
 author: friendbear
 title: Virtual and AWS podcast 
 categories: [blog, Oculus GO, AWS]
-tags: [AWS, Oculus GO, Scala]
+tags: [AWS, Oculus GO, lang-scala]
 ---
 
 ### AWS podcast

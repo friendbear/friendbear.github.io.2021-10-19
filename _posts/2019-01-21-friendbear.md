@@ -2,6 +2,8 @@
 layout: post
 author: friendbear
 title:  Scala and other Try Log
+categories: [lang-scala]
+tags: [CRM, lang-scala]
 ---
 
 ### Try Scala
@@ -17,11 +19,11 @@ title:  Scala and other Try Log
   - <https://www.hubspot.com/>
   - Slack coordination setting
  
-- Contact us https://share.hsforms.com/1JcJyjh3CT5O62BL7h8H0Ww36y3j
+- Contact us <https://share.hsforms.com/1JcJyjh3CT5O62BL7h8H0Ww36y3j>
 
 ```scala
 /**
-  * - Monads is very important ðŸ”´
+  * - Monads is very important
   *
   * trait MonadTemplate[A] {
   *   def unit(value: A): MonadTemplate[A] // also called pure or apply

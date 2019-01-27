@@ -2,6 +2,8 @@
 layout: post
 auther: freindbear
 title: Seculity AWS re:Invent 2018 OSAKA
+categories: [AWS]
+tags: [AWS]
 ---
 
 ## Seculity

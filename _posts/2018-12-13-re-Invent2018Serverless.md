@@ -2,6 +2,8 @@
 layout: post
 auther: freindbear
 title: Serverless AWS re:Invent 2018 OSAKA
+categories: [AWS]
+tags: [AWS]
 ---
 
 ## Serverless

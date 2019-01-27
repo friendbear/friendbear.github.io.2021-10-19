@@ -2,6 +2,8 @@
 layout: post
 author: friendbear
 title: 01/20 Try Scala and more.
+categories: [lang-scala]
+tags: [lang-scala]
 ---
 
 ### Try Scala

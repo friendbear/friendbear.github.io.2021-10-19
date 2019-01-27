@@ -2,6 +2,8 @@
 layout: post
 author: friendbear
 title: Security
+categories: [Security]
+tags: [Mac]
 ---
 
 ### 全体的にセキュリティー強化

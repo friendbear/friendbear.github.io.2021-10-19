@@ -2,6 +2,8 @@
 layout: post
 author: friendbear
 title:  JDK on Amazon, Security, CRM Setup, and other
+categories: [Security]
+tags: [Security]
 ---
 
 ### Java Tips

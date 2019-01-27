@@ -2,6 +2,8 @@
 layout: post
 author: friendbear
 title: Start Blog on pages.github.com
+categories: [blog]
+tags: [pages.github.com]
 ---
 
 ## Start This Blog

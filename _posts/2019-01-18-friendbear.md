@@ -2,6 +2,8 @@
 layout: post
 author: friendbear
 title: New Software and Try Scala
+categories: [lang-scala]
+tags: [lang-scala, Software]
 ---
 
 ### gocui
