@@ -172,6 +172,7 @@ def JSONSerialization(args: String*) = {
   }
 }
 ```
+
 </details>
 
 <details>
@@ -233,6 +234,8 @@ def ScalaJavaConversions(args: String*) = {
     println(scalaOption)
   }
 }
+```
+
 <details>
 <summary>-</summary>
 <pre>
