@@ -1,8 +1,8 @@
 ---
 layout: post
 author: friendbear
-title: Scala(implicit class Pimp My Library, Type Class Part3)
-categories: [blog, lang-scala]
+title: Scala(implicit class Pimp My Library, Type Class Part3) and Email migration under consideratioh
+categories: [blog, lang-scala, email migration]
 tags: [lang-scala]
 ---
 
@@ -13,6 +13,9 @@ tags: [lang-scala]
   - 🔵 Type Class Part3
     - Very difficulty
 
+
+### Security email hosting service
+- <https://runbox.com/>
 
 ```scala
   def htmlBoilerplate[T](content: T)(implicit serializer: HTMLSerializer[T]): String =
@@ -49,7 +52,6 @@ tags: [lang-scala]
 ### Usefull Link
 
 ### Recommend
-
 
 ### Snippets
 
