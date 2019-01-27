@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title: implicit class Pimp My Library
+title: Scala(implicit class Pimp My Library, Type Class Part3)
 categories: [blog, lang-scala]
 tags: [lang-scala]
 ---
@@ -10,8 +10,36 @@ tags: [lang-scala]
 ### Try Scala
 - RockScalaForAdvanced
   - Pimp My Library!
-  - Scala & JVM Standard Parallel Libraries
-    - implicit class RichInt(val value: Int) extends AnyVal
+  - 🔵 Type Class Part3
+    - Very difficulty
+
+
+```scala
+  def htmlBoilerplate[T](content: T)(implicit serializer: HTMLSerializer[T]): String =
+    s"<html><body> ${content.toHTML(serializer)} </body></html>"
+
+  def htmlSugar[T : HTMLSerializer](content: T): String = {
+     val serializer = implicitly[HTMLSerializer[T]]
+     // use serializer
+     s"<html><body> ${content.toHTML(serializer)}</body></html>"
+   }
+
+  // implicitly
+  case class Permissions(mask: String)
+  implicit val defaultPermissions: Permissions = Permissions("0744")
+
+  // in some other part of the code
+  val standardPerms = implicitly[Permissions](defaultPermissions)
+```
+
+* test code
+```scala
+    println(2.toHTML)
+    println(john.toHTML(PartialUserSerializer))
+
+    println(htmlBoilerplate(john)(HTMLSerializer[User]))
+    println(htmlSugar(john))
+```
 
 
 ### kumasora
@@ -131,7 +159,40 @@ def PimpMyLibrary(args: String*) = {
 <code>
 #!/usr/bin/env amm
 @main
-def AtomicReference(args: String*) = {
+def TypeCaseEqual(args: String*) = {
+  /**
+    * Equality
+    */
+  // TYPE CLASS
+  trait Equal[T] {
+    def apply(a: T, b: T): Boolean
+  }
+  object Equal {
+    def apply[T](a: T, b: T)(implicit equalizer: Equal[T]): Boolean =
+      equalizer.apply(a, b)
+  }
+
+  implicit object NameEquality extends Equal[User] {
+    override def apply(a: User, b: User): Boolean = a.name == b.name
+  }
+  object FullEquality extends Equal[User] {
+    override def apply(a: User, b: User): Boolean = a.name == b.name && a.email == b.email
+  }
+
+  /*
+    Exercise - improve the Equal TC with an implicit conversion class
+    ===(another value: T)
+    !==(another value: T)
+   */
+  implicit class TypeSafeEqual[T](value :T) {
+    def ===(another: T)(implicit equalizer: Equal[T]): Boolean = equalizer.apply(value, another)
+    def !==(another: T)(implicit equalizer: Equal[T]): Boolean = ! equalizer.apply(value, another)
+  }
+
+  val john = User("Jon", 44, "jon@example.com")
+  val anotherJohn = User("Jon", 44, "jon@example.com")
+
+  println(john === anotherJohn)
 }
 </code>
 </pre>
