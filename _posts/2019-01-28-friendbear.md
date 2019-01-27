@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title: Scala(A Type Class End-to-end example: JSON Serialization)
+title: Scala (A Type Class End-to-end example: JSON Serialization)
 categories: [blog, lang-scala]
 tags: [lang-scala, other]
 ---
