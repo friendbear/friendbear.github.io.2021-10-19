@@ -15,6 +15,9 @@ tags: [lang-scala, other]
     - collection.JavaConverters._
 
 
+### Activate AirServer for Mac
+<http://www.airserver.com>
+
 ### kumasora
 
 ### Reference
