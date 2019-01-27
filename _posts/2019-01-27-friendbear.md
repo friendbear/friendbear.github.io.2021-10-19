@@ -198,13 +198,54 @@ def TypeCaseEqual(args: String*) = {
 </pre>
 </details>
 <details>
-<summary>ImplicitInto</summary>
+<summary>EqualityPlayground</summary>
 <pre>
 <code>
 #!/usr/bin/env amm
 
 @main
-def ImplicitInto(args: String*) = {
+case class User(name: String, age: Int, email: String)
+def EqualityPlayground(args: String*) = {
+ /**
+    * Equality
+    */
+  // TYPE CLASS
+  trait Equal[T] {
+    def apply(a: T, b: T): Boolean
+  }
+  object Equal {
+    def apply[T](a: T, b: T)(implicit equalizer: Equal[T]): Boolean =
+      equalizer.apply(a, b)
+  }
+
+  implicit object NameEquality extends Equal[User] {
+    override def apply(a: User, b: User): Boolean = a.name == b.name
+  }
+  object FullEquality extends Equal[User] {
+    override def apply(a: User, b: User): Boolean = a.name == b.name && a.email == b.email
+  }
+
+  /*
+    Exercise - improve the Equal TC with an implicit conversion class
+    ===(another value: T)
+    !==(another value: T)
+   */
+  implicit class TypeSafeEqual[T](value :T) {
+    def ===(another: T)(implicit equalizer: Equal[T]): Boolean = equalizer.apply(value, another)
+    def !==(another: T)(implicit equalizer: Equal[T]): Boolean = ! equalizer.apply(value, another)
+  }
+
+  val testCode1 = {
+    val john = User("Jon", 44, "jon@example.com")
+    val anotherJohn = User("Jon", 44, "jon@example.com")
+
+    println(john === anotherJohn) // => true
+    /*
+    john.===(anotherJohn)
+    new TypeSafeEqual[User](john).===(anotherJohn)
+    new TypeSafeEqual[User](john).===(anotherJohn)(NameEquality)
+     */
+  }
 }
 </code>
 </pre>
