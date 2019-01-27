@@ -29,9 +29,9 @@ tags: [lang-scala, other]
 ### Snippets
 
 <details>
-<summary>JSONSerialization</summary>
-<pre>
-<code>
+<summary><code>JSONSerialization</code></summary>
+
+```scala
 #!/usr/bin/env amm
 @main
 def JSONSerialization(args: String*) = {
@@ -167,14 +167,13 @@ def JSONSerialization(args: String*) = {
     println(feed.toJSON.stringify)
   }
 }
-</code>
-</pre>
+```
 </details>
 
 <details>
-<summary>ScalaJavaConversions</summary>
-<pre>
-<code>
+<summary><code>ScalaJavaConversions</code></summary>
+
+```scala
 #!/usr/bin/env amm
 
 import java.{util => ju}
@@ -230,9 +229,6 @@ def ScalaJavaConversions(args: String*) = {
     println(scalaOption)
   }
 }
-</code>
-</pre>
-</details>
 <details>
 <summary>-</summary>
 <pre>
