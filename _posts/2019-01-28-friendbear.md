@@ -10,7 +10,7 @@ tags: [lang-scala, other]
 ### Try Scala
 - RockScalaForAdvanced
   - A Type Class End-to-end example: JSON Serialization
-    - Very difficulty
+    - Very difficulty, Very Powerfull
 
 
 ### kumasora
