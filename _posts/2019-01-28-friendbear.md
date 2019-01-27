@@ -18,6 +18,10 @@ tags: [lang-scala, other]
 ### Activate AirServer for Mac
 <http://www.airserver.com>
 
+
+### Install Software
+[enhancd](https://github.com/b4b4r07/enhancd)
+
 ### kumasora
 
 ### Reference
