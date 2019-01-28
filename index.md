@@ -55,7 +55,7 @@ layout: default
 * [Scala Users](https://users.scala-lang.org/top)
 
 <div>
-<iframe src="https://users.scala-lang.org/u/friendbear/summary" sandbox="allow-scripts allow-modals"></iframe>
+<iframe src="https://users.scala-lang.org/u/friendbear/summary" sandbox="allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox"></iframe>
 </div>
 
 ### Links
