@@ -47,8 +47,11 @@ coursier bootstrap \
      -o almond
 ```
 
+### Scala Community
+* [Scala Users](https://users.scala-lang.org/top)
+
 ### Links
-[Qiita](https://qiita.com/tags/scala)
+* [Qiita](https://qiita.com/tags/scala)
 
 
 ## elastic
