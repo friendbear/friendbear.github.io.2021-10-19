@@ -56,8 +56,9 @@ layout: default
 ### Scala Community
 * [Scala Users](https://users.scala-lang.org/top)
 
+
 <div>
-<iframe src="https://users.scala-lang.org/u/friendbear/summary" sandbox="allow-scripts allow-modals allow-popups allow-popups-to-escape-sandbox"></iframe>
+<a target="_blank" href="https://users.scala-lang.org/u/friendbear">Link to My ScalaUsers</a>
 </div>
 
 ### Links
