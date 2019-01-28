@@ -40,8 +40,7 @@ layout: default
 - [Metals](https://scalameta.org/metals/)
 - [Scala Kernel](https://almond.sh/docs/intro)
 
-
-    ```console
+  ```sh
     SCALA_VERSION=2.12.8 ALMOND_VERSION=0.2.1
     coursier bootstrap \
          -r jitpack \
@@ -49,7 +48,7 @@ layout: default
          sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
          --sources --default=true \
          -o almond
-    ```
+  ```
 
 ### Awesome Scala
 * <https://github.com/lauris/awesome-scala/blob/master/README.md>
