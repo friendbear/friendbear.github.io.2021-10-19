@@ -1,11 +1,13 @@
 ---
 layout: post
 author: friendbear
-title: Scala (A Type Class End-to-end example JSON Serialization)
+title: Setup Yubico and Scala (A Type Class End-to-end example JSON Serialization)
 categories: [blog, lang-scala]
-tags: [lang-scala, other]
+tags: [lang-scala, Security]
 ---
 
+### Setup YubiKey
+* <https://yubico.com/start>
 
 ### Try Scala
 - RockScalaForAdvanced
