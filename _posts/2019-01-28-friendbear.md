@@ -6,8 +6,12 @@ categories: [blog, lang-scala]
 tags: [lang-scala, Security]
 ---
 
-### Setup YubiKey
+### Setup YubiKey 5C
 * <https://yubico.com/start>
+  * Setup Mac
+* Yubiko Authenticator
+  * Setup Twitter
+  * Setup Facebook
 
 ### Try Scala
 - RockScalaForAdvanced
@@ -30,7 +34,7 @@ tags: [lang-scala, Security]
     ```
 
 ### Apache Spark2
-<https://github.com/alexarchambault/ammonite-spark>
+* <https://github.com/alexarchambault/ammonite-spark>
 
 ### Activate AirServer for Mac
 * <http://www.airserver.com>
@@ -44,6 +48,7 @@ tags: [lang-scala, Security]
 
 ### Reference
 * <https://talk.jekyllrb.com/>
+* [Yubico](https://www.yubico.com/)
 
 ### Usefull Link
 * <https://www.linkedin.com/in/friendbear/>
