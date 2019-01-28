@@ -36,7 +36,6 @@ tags: [lang-scala, other]
 <summary><code>JSONSerialization</code></summary>
 <pre>
 <code>
-```scala
 #!/usr/bin/env amm
 @main
 def JSONSerialization(args: String*) = {
@@ -172,7 +171,6 @@ def JSONSerialization(args: String*) = {
     println(feed.toJSON.stringify)
   }
 }
-```
 </code>
 </pre>
 </details>
@@ -181,7 +179,6 @@ def JSONSerialization(args: String*) = {
 <summary><code>ScalaJavaConversions</code></summary>
 <pre>
 <code>
-```scala
 #!/usr/bin/env amm
 
 import java.{util => ju}
@@ -237,7 +234,6 @@ def ScalaJavaConversions(args: String*) = {
     println(scalaOption)
   }
 }
-```
 
 </code>
 </pre>
