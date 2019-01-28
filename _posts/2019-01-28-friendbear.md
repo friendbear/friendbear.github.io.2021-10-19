@@ -35,6 +35,7 @@ tags: [lang-scala, other]
 <details>
 <summary><code>JSONSerialization</code></summary>
 <pre>
+<code>
 ```scala
 #!/usr/bin/env amm
 @main
@@ -172,11 +173,13 @@ def JSONSerialization(args: String*) = {
   }
 }
 ```
+</code>
 </pre>
 </details>
 
 <details>
 <summary><code>ScalaJavaConversions</code></summary>
+<pre>
 <code>
 ```scala
 #!/usr/bin/env amm
@@ -237,6 +240,7 @@ def ScalaJavaConversions(args: String*) = {
 ```
 
 </code>
+</pre>
 <details>
 <summary>-</summary>
 <pre>
