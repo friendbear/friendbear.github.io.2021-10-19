@@ -38,6 +38,7 @@ tags: [lang-scala, other]
 ### kumasora
 
 ### Reference
+* <https://talk.jekyllrb.com/>
 
 ### Usefull Link
 * <https://www.linkedin.com/in/friendbear/>
