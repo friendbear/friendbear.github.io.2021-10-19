@@ -54,9 +54,7 @@ layout: default
 ### Scala Community
 * [Scala Users](https://users.scala-lang.org/top)
 
-<div class="users-scala">
-<iframe src="https://users.scala-lang.org/u/friendbear/" width="500" height="450" frameborder="0" style="border:0"></iframe>
-</div>
+<iframe src="https://users.scala-lang.org/u/friendbear/summary" frameborder="0" style="border:0"></iframe>
 
 ### Links
 * [Qiita](https://qiita.com/tags/scala)
