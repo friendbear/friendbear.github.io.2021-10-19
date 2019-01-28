@@ -10,6 +10,9 @@ layout: default
 * [Blog](/blog)
 * [About Me](/about.html)
 
+
+
+  * [Link to another page](./another-page.html).
 ### This Page is generate by [Jekyllrb](https://jekyllrb.com)
 
 * This site choice's  themes is here [jekyllrb theme](https://github.com/mattvh/jekyllthemes/)
@@ -62,7 +65,6 @@ coursier bootstrap \
 ## Writing Format is Markdown
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
 
