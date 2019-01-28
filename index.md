@@ -39,15 +39,18 @@ layout: default
 - [LLVM](http://llvm.org/)
 - [Metals](https://scalameta.org/metals/)
 - [Scala Kernel](https://almond.sh/docs/intro)
+
+
     ```console
-      SCALA_VERSION=2.12.8 ALMOND_VERSION=0.2.1
-      coursier bootstrap \
-           -r jitpack \
-           -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
-           sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
-           --sources --default=true \
-           -o almond
-      ```
+    SCALA_VERSION=2.12.8 ALMOND_VERSION=0.2.1
+    coursier bootstrap \
+         -r jitpack \
+         -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
+         sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
+         --sources --default=true \
+         -o almond
+    ```
+
 ### Awesome Scala
 * <https://github.com/lauris/awesome-scala/blob/master/README.md>
 
