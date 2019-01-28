@@ -1,8 +1,8 @@
 ---
 auther: friendbear
 title: linux 
-categories: [linux]
-tags: [linux, systemd, network, kernel]
+categories: [Linux]
+tags: [Linux, systemd, network, kernel]
 ---
 
 ## 1.Linux

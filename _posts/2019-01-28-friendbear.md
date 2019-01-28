@@ -27,6 +27,9 @@ tags: [lang-scala, other]
       }
     ```
 
+### Apache Spark2
+<https://github.com/alexarchambault/ammonite-spark>
+
 ### Activate AirServer for Mac
 * <http://www.airserver.com>
 
@@ -34,7 +37,7 @@ tags: [lang-scala, other]
 ### Install Software
 * [enhancd](https://github.com/b4b4r07/enhancd)
 * [LinkedIn mobile]
-*
+
 ### kumasora
 
 ### Reference
