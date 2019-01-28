@@ -28,7 +28,7 @@ layout: default
 
 
 ## Scala Lang
-- [Scala org](https://www.scala-lang.org/)
+- [scala-lang.org](https://www.scala-lang.org/)
 - [sbt](https://www.scala-sbt.org/)
 - [ScalaTest](http://www.scalatest.org)
 - [mongoDB](http://mongodb.github.io/mongo-scala-driver/)
@@ -39,16 +39,17 @@ layout: default
 - [LLVM](http://llvm.org/)
 - [Metals](https://scalameta.org/metals/)
 - [Scala Kernel](https://almond.sh/docs/intro)
--
-```sh
-SCALA_VERSION=2.12.8 ALMOND_VERSION=0.2.1
-coursier bootstrap \
-     -r jitpack \
-     -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
-     sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
-     --sources --default=true \
-     -o almond
-```
+    ```console
+      SCALA_VERSION=2.12.8 ALMOND_VERSION=0.2.1
+      coursier bootstrap \
+           -r jitpack \
+           -i user -I user:sh.almond:scala-kernel-api_$SCALA_VERSION:$ALMOND_VERSION \
+           sh.almond:scala-kernel_$SCALA_VERSION:$ALMOND_VERSION \
+           --sources --default=true \
+           -o almond
+      ```
+### Awesome Scala
+* <https://github.com/lauris/awesome-scala/blob/master/README.md>
 
 ### Scala Community
 * [Scala Users](https://users.scala-lang.org/top)
