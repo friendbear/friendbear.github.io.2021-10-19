@@ -10,25 +10,27 @@ tags: [lang-scala, other]
 ### Try Scala
 - RockScalaForAdvanced
   - A Type Class End-to-end example: JSON Serialization
-    - Very difficulty, Very Powerfull
+    - Very difficulty. but Very Powerfull
   - Scala <> Java Conversions
     - collection.JavaConverters._
 
 
 ### Activate AirServer for Mac
-<http://www.airserver.com>
+* <http://www.airserver.com>
 
 
 ### Install Software
-[enhancd](https://github.com/b4b4r07/enhancd)
-
+* [enhancd](https://github.com/b4b4r07/enhancd)
+* [LinkedIn mobile]
+*
 ### kumasora
 
 ### Reference
 
 ### Usefull Link
-
+* <https://www.linkedin.com/in/friendbear/>
 ### Recommend
+* <https://www.slideshare.net/TaisukeOe/presentations>
 
 ### Snippets
 
