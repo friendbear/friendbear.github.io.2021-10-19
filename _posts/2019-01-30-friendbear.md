@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title:  Scala (Inheritane, Variance)
+title:  Scala (Inheritane, Variance, TypeMember)
 categories: [blog, lang-scala]
 tags: [lang-scala]
 ---
