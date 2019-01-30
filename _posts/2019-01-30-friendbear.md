@@ -67,8 +67,9 @@ tags: [lang-scala]
 ### kumasora
 
 ### Reference
-
+[GitHub PR protected branches](https://help.github.com/articles/configuring-protected-branches/)
 ### Usefull Link
+
 
 ### Recommend
 

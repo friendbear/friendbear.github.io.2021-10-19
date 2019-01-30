@@ -10,6 +10,7 @@ layout: default
 * [Blog](/blog)
 * [About Me](/about.html)
 
+* [Son's page](https://kumasora.github.io/ "kumasora is my son")
 
 
   * [Link to another page](./another-page.html).
