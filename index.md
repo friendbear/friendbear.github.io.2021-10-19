@@ -4,11 +4,13 @@ layout: default
 
 # I'm sorry. May be underconstruction 
 
+[Aim should be Π type](https://studyhacker.net/vocabulary/paigata-jinzai)
 
 ## Contents
 
-* [Blog](/blog)
 * [About Me](/about.html)
+
+* [Blog](/blog)
 
 * [Son's page](https://kumasora.github.io/ "kumasora is my son")
 
