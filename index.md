@@ -29,12 +29,15 @@ layout: default
 
 [DevOps Enginner 2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png)
 
+## Serverless
+- [Serverless framework](https://serverless.com/)
 
 ## Scala Lang
 - [scala-lang.org](https://www.scala-lang.org/)
 - [sbt](https://www.scala-sbt.org/)
 - [ScalaTest](http://www.scalatest.org)
 - [mongoDB](http://mongodb.github.io/mongo-scala-driver/)
+- [Slick](http://slick.lightbend.com/)
 - [Apache Spark](http://spark.apache.org/)
 - [Scala Scripts](http://ammonite.io/)
 - [Scala Native](http://www.scala-native.org/)
