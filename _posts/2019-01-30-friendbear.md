@@ -256,6 +256,7 @@ def Variance(args: String*) = {
 
 </code>
 </pre>
+</details>
 <details>
 <summary><code>Type Members</code></summary>
 <pre>

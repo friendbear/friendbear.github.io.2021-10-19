@@ -258,6 +258,7 @@ def StructuralTypes(args: String*) = {
 
 </code>
 </pre>
+</details>
 <details>
 <summary><code>Self Types</code></summary>
 <pre>
