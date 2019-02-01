@@ -1,6 +1,6 @@
 ---
 auther: friendbear
-title: linux 
+title: Study Linux 
 categories: [Linux]
 tags: [Linux, systemd, network, kernel]
 ---
