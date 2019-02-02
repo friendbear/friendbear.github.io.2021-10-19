@@ -1,7 +1,7 @@
 ---
 layout: post
 author: friendbear
-title:  Scala (Reflection, Part1, Part2)
+title:  Scala (Reflection, Part1, Part2, level 9000: A Potentially Infinite Set)
 categories: [blog, lang-scala]
 tags: [lang-scala]
 ---
@@ -10,6 +10,8 @@ tags: [lang-scala]
 - RockScalaForAdvanced
   - reflection Part1
   - reflection Part2
+
+  - A Functional Set, level 9000: A Potentially Infinite Set
 
 ### kumasora
 
