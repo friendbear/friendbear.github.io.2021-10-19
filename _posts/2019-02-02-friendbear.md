@@ -12,13 +12,19 @@ tags: [lang-scala]
   - reflection Part2
 
   - A Functional Set, level 9000: A Potentially Infinite Set
+  - Lazy Evaluation Exercise: A Potentially Infinite Stream
 
+
+### Message from Daniel
+```
+Massive Congratulations! Not many people have the guts to go through this kind of material. This is hard, but you've done it. To put things in perspective, only 1% of Scala engineers can even read the code that you've written in this course! You're far ahead of most and you should now have the tools you need to develop anything, however complex or scalable it needs to be. I hope you've enjoyed this course as much as I have. For now, take a step back, congratulate yourself on what you've learned and created and keep on coding! Write your own projects now, improve on what we've built together, have fun with your creations and continue to rock the JVM! Until we meet again, Daniel
+```
 ### kumasora
 
 ### Reference
 
 ### Usefull Link
-
+- [sqreen](https://my.sqreen.io/login)
 ### Recommend
 
 
