@@ -43,5 +43,6 @@ defaults:
       layout: "default"
 
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
+  - 'jekyll-feed'
+  - 'jekyll-seo-tag'
+  - 'jekyll-twitter-plugin'
