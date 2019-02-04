@@ -78,6 +78,7 @@ layout: default
 ### Links
 * [Qiita](https://qiita.com/tags/scala)
 
+---
 
 ## elastic
 - [Elasticsearch](https://www.elastic.co/)
