@@ -6,9 +6,13 @@ categories: [blog]
 tags: [lang-scala]
 ---
 
-### Blog
+### Modify Blog
  - Twitter View
  - add favcon.ico
+
+### Clear up CRM 
+### Install Security App
+[BYOD](https://digitasecurity.com/)
 
 ### Write Test code Scala
 - RockScalaForBeginner
@@ -18,6 +22,9 @@ tags: [lang-scala]
 ### Reference
 
 ### Usefull Link
+
+[mastodon](https://joinmastodon.org)
+
 ### Recommend
 
 ### Snippets
