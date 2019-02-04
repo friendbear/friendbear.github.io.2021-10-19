@@ -6,7 +6,9 @@ categories: [blog]
 tags: [lang-scala]
 ---
 
-### Blog - Twitter
+### Blog
+ - Twitter View
+ - add favcon.ico
 
 ### Write Test code Scala
 - RockScalaForBeginner
