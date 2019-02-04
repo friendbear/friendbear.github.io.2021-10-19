@@ -19,7 +19,8 @@ layout: default
 ### This Page is generate by [Jekyllrb](https://jekyllrb.com)
 
 * This site choice's  themes is here [jekyllrb theme](https://github.com/mattvh/jekyllthemes/)
-* Plugin & extensions <https://planetjekyll.github.io/plugins/top> 
+* [Plugin & extensions](https://planetjekyll.github.io/plugins/top)
+
 --- 
 
 ## Roadmap
