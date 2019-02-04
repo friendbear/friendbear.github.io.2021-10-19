@@ -1,18 +1,15 @@
 ---
 layout: post
 author: friendbear
-title: customize blog . Write test Code
+title: k8s Linkerd2.x
 categories: [blog]
-tags: [lang-scala]
+tags: [k8s]
 ---
 
-### Modify Blog
- - Twitter View
- - add favcon.ico
+### Linkerd
+- k8s service mesh flamework
+  - <https://linkerd.io/>
 
-### Clear up CRM 
-### Install Security App
-[BYOD](https://digitasecurity.com/)
 
 ### Write Test code Scala
 - RockScalaForBeginner
@@ -23,7 +20,6 @@ tags: [lang-scala]
 
 ### Usefull Link
 [LINKERD k8s](https://linkerd.io/2/overview/)
-[mastodon](https://joinmastodon.org)
 
 ### Recommend
 
