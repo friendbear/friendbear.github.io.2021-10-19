@@ -12,7 +12,7 @@ tags: [lang-scala]
   - Finalizing Mkdir and Testing with Ls
   - PWD and Creating Files(Touch)
   - Changing Directories(CD) and Traversing Immutable Structures, Part1
-
+  - CD and Traversion Immutable Structures, Part2 -Pelateive Path
 
 ### Write Test code Scala
 - RockScalaForBeginner
