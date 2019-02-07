@@ -13,6 +13,7 @@ tags: [lang-scala]
   - PWD and Creating Files(Touch)
   - Changing Directories(CD) and Traversing Immutable Structures, Part1
   - CD and Traversion Immutable Structures, Part2 -Pelateive Path
+  - Removing "Files" and "Directories" (RM)
 
 ### Write Test code Scala
 - RockScalaForBeginner
