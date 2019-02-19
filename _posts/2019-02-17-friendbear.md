@@ -21,6 +21,10 @@ go version go1.12beta1 darwin/amd64
   * <https://golang.org/doc/install>
 * about package(main, other, dir)
 
+### GraphQL on Prisma
+* codesandbox
+* [Try prisma](https://github.com/prisma-csb/prisma-client-demo-ts/blob/master/SETUP.md)
+*
 ### Reference
 [初めてのGo言語](http://cuto.unirita.co.jp/gostudy/)
 [go package](http://cuto.unirita.co.jp/gostudy/post/go-package/)
