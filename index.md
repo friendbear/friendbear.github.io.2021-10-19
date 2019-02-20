@@ -77,13 +77,16 @@ layout: default
 
 ### Links
 * [Qiita](https://qiita.com/tags/scala)
-
 ---
 
 ## elastic
 - [Elasticsearch](https://www.elastic.co/)
 
 ---
+
+## etc.
+* [hackr.io](https://hackr.io/friendbear)
+* [tools](/tools.html)
 
 ## Writing Format is Markdown
 
