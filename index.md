@@ -31,6 +31,7 @@ layout: default
 [DevOps Enginner 2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png)
 
 ## GitHub
+* [Github.blog](https://github.blog/)
 * [DEVHUB](https://devhubapp.com/)
 * [zenhub](https://app.zenhub.com)
 

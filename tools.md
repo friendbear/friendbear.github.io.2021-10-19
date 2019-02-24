@@ -5,6 +5,22 @@ layout: default
 
 # tools memo
 
+## gotop 
+terminal-based graphical activity monitor
+<
+
+## Dejavu
+import and explore data with Elasticsearch
+<https://github.com/appbaseio/dejavu>
+
+## syncthing
+File Synchronization(P2P)
+<https://github.com/syncthing/syncthing>
+
+## The Lounge
+web IRC client designed for self-hosting.
+<https://github.blog/2019-02-05-release-radar-january-2019/#the-lounge-3-0>
+
 ## Terminal Recording(asciinema)
 - <https://asciinema.org/~friendbear>
   - <https://asciinema.org/docs/how-it-works>
