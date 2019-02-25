@@ -23,6 +23,12 @@ layout: default
 
 --- 
 
+## News
+[publickey1.jp](https://www.publickey1.jp/)
+
+## Lang
+* [programing-language](/lang.html)
+
 ## Roadmap
 
 [BackEnd Enginner 2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/backend.png)

@@ -4,6 +4,9 @@ layout: default
 
 
 # Join
+## 2016-01: stackshare
+<https://stackshare.io/friendbear>
+
 ## 2019-02-24: apache.org
 * <https://cwiki.apache.org/confluence/>
 
