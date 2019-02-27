@@ -16,6 +16,8 @@ layout: default
 ## 2019-02-25: smartbear
 * <https://smartbear.com/>
 
+## 2019-02-26: qnap
+* <https://www.qnapclub.jp/>
 
 
 
