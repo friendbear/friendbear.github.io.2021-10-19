@@ -77,3 +77,8 @@ let g:lsc_auto_map = {
   \  ‘GoToDefinition’: ‘gd’,
   \}
 ```
+
+### Tor
+* TorBrouser
+* OnionShare
+  <https://github.com/micahflee/onionshare>
