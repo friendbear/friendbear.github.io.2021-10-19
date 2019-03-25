@@ -7,7 +7,6 @@ layout: default
 
 ## gotop 
 terminal-based graphical activity monitor
-<
 
 ## Dejavu
 import and explore data with Elasticsearch
@@ -82,3 +81,15 @@ let g:lsc_auto_map = {
 * TorBrouser
 * OnionShare
   <https://github.com/micahflee/onionshare>
+
+### marp
+* <https://github.com/marp-team/marp>
+  * require yarn
+  ```sh
+  brew install yarn
+  ```
+  * [how to setup](https://yarnpkg.com/lang/en/docs/install/#mac-stable)
+
+### GitPitch
+* <https://gitpitch.com/docs/getting-started>
+
