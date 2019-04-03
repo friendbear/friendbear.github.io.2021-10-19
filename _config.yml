@@ -2,9 +2,9 @@ lang: ja_JP
 title: bearsworld
 description: for friendbear GitHub Pages.
 show_downloads: false
-google_analytics: UA-37353976-2
-twitter: true
-hubspot: true
+#google_analytics: UA-37353976-2
+#twitter: true
+#hubspot: true
 theme: jekyll-theme-architect
 #paginate: 5
 #paginate_path: "/blog/page:num/"
