@@ -12,7 +12,6 @@ layout: default
 
 * [Blog](/blog)
 
-* [Son's page](https://kumasora.github.io/ "kumasora is my son")
 
 
   * [Link to another page](./another-page.html).
@@ -40,10 +39,12 @@ layout: default
 * [Github.blog](https://github.blog/)
 * [DEVHUB](https://devhubapp.com/)
 * [zenhub](https://app.zenhub.com)
+* [smee](https://smee.io)
 
 ## AWS
 * [AWS trainig and certification](https://www.aws.training)
 * [Black Belt Online Seminar](https://aws.amazon.com/jp/about-aws/events/webinars/)
+
 ## Serverless
 - [Serverless framework](https://serverless.com/)
 
@@ -100,13 +101,23 @@ layout: default
 * Apache Spark
   <https://spark.apache.org/>
 
+### Apache 
 ---
+* [Markdown Reference](./markdown_reference.html)
 
 ## etc.
+
+* <https://www.wikihow.com>
+
+<details>
+<summary>-</summary>
+<pre>
 * [hackr.io](https://hackr.io/friendbear)
 * [tools](/tools.html)
 * [Join](/join.html)
+* [Son](https://kumasora.github.io/ "kumasora is my son")
+</pre>
+<details>
 
 ## Writing Format is Markdown
 
-* [Markdown Reference](./markdown_reference.html)
