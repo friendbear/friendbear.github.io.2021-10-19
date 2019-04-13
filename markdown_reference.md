@@ -1,6 +1,10 @@
 ## Markdown Reference
 
+### GitHub Guide (Markdown)
+<https://guides.github.com/features/mastering-markdown/#GitHub-flavored-markdown>
 
+
+### My gist
 ```
 —
 __Advertisement :)__
