@@ -6,8 +6,8 @@ show_downloads: false
 #twitter: true
 #hubspot: true
 theme: jekyll-theme-architect
-#paginate: 5
-#paginate_path: "/blog/page:num/"
+paginate: 5
+paginate_path: "/blog/page:num/"
 permalink: /:categories/:year/:month/:day/:title:output_ext
 defaults:
   - scope:
