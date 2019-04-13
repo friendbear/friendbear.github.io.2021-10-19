@@ -93,3 +93,6 @@ let g:lsc_auto_map = {
 ### GitPitch
 * <https://gitpitch.com/docs/getting-started>
 
+### icon
+* <https://icomoon.io>
+
