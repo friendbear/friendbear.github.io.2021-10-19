@@ -12,3 +12,6 @@ themes:
 
 change:
 	open $(bundle show minima)
+
+update:
+	bundle update jekyll
