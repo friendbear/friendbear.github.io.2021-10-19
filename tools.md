@@ -93,6 +93,9 @@ let g:lsc_auto_map = {
 ### GitPitch
 * <https://gitpitch.com/docs/getting-started>
 
+### Twofactor Auth
+* <https://twofactorauth.org/>
+
 ### icon
 * <https://icomoon.io>
-
+* <https://fontawesome.com/icons?from=io>
