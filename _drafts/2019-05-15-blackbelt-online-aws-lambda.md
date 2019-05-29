@@ -1,9 +1,9 @@
 ---
 layout: post
-title: AWS Blackbelt online AWS Lambda 1,2,3
+title: AWS Blackbelt online AWS Lambda 1,2,3,4
 author: friendbear
-category: [lambda]
-tags: [aws, ]
+category: [serverless]
+tags: [aws, lambda]
 
 ---
 
@@ -151,7 +151,74 @@ Source -> Build -> Beta -> Prod
 GitHub -> AWS CodeBuild -> SAM -> Code Deploy
 ```
 
+## Lambda 4 (60m)
+### セキュリティ
+* AWSセキュリティ方針についての説明
+* 責任共有モデル
+  * Security on The cloud
+  * Security off The cloud
+    * データセンターの物理セキュリティ
+    * ネットワークセキュリティ
+    * 論理的なセキュリティ
+    * 従業員・アカウントの管理
+    * データセキュリティ
+    * ストレージの廃棄プロセス
+      * Lamdaのセキュリティー
+        コントロールプレーンとデータプレーン
+        データプレーンとMicroVM
+          MicroVM、Lambda Worker、実行環境、ランタイム、関数コード
+      Isolation（隔離）
+        cgroup
+        namespace
+        seccomp-bpf
+        iptables/routing tables
+        chroot
+      MicroVMの隔離
+        単一のAWSアカウントにおいて、複数の実行環境を単一のMicroVM上で実行できるが
+        AWSアカウント間
+      Payload
+        同期呼び出し（RequestResponse）
+        非同期呼び出し（Event）
+      ランタイム
+        組み込みランタイムはAWSの責任
+        カスタムランタイムはユーザの責任
 
+        Deprecatedとなったランタイムのセキュリティーアップデートや技術サポート、ホットフィックスの責任は行われない
+      Lambda関数のAudit
+        Amazon CloudTrail
+        AWS Config
+      AWS Lambdaのコンプライアンス
+      AWS Lambdaがよりセキュアな理由
+        パッチが適用されていないサーバは存在しない
+        SSH不要
+        すべてのリクエストは認可され監査可能
+        Lambda関数は短命
 
+* サーバーレスでの管理ポイント
+
+### 
+* AWSアカウントをセキュアにする
+  * IAM
+  * Lambda関数のセキュリティ
+    * 最低限必要な権限はCloudWatchLogsへの出力権限
+    * LambdaファンクションからアクセスするAWSリソースに対して、必要最小限のアクションを許可
+    * IAMロールに関しては、複数のLambda関数内で1つのIAMロールを共有することは最小限のアクセス権限という規則に反する
+  * 環境変数の利用
+    * KMS
+    * (SSM)Parameter Storeへのアクセス
+  * 依存関係のバリデーション
+    3rd Party
+    DevOps
+    * OWASP
+    * Snyk
+    * Twistlock
+
+### ユースケースと事例
+* mobile, api
+* データ加工、連携処理
+* データイベント処理
+* バックエンドデータ処理
+
+### 
 
 
