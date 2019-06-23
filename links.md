@@ -40,3 +40,8 @@ template: default
 ### Pages
 * <https://twitter.github.io/>
 
+
+## Events
+
+### EventRegist
+* <https://eventregist.com/>
