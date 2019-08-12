@@ -18,8 +18,6 @@ tags: [lang-scala]
 ### Write Test code Scala
 - RockScalaForBeginner
 
-### kumasora
-
 ### Reference
 
 ### Usefull Link

@@ -239,40 +239,6 @@ def ProducerConsumerLevel3(args: String*) = {
 <details>
 
     
-<summary>kumasora(osu! storyboard)</summary>
-<pre>
-<code>
-using OpenTK;
-using OpenTK.Graphics;
-using StorybrewCommon.Mapset;
-using StorybrewCommon.Scripting;
-using StorybrewCommon.Storyboarding;
-using StorybrewCommon.Storyboarding.Util;
-using StorybrewCommon.Subtitles;
-using StorybrewCommon.Util;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace StorybrewScripts
-{
-    public class Black : StoryboardObjectGenerator
-    {
-        public override void Generate()
-        {
-            var layer = GetLayer("TEST");
-            var BG = layer.CreateSprite("back.png", OsbOrigin.Centre);
-
-            BG.Scale(0, 10000, 2, 2);
-            BG.Fade(0, 2000, 0, 10);
-            BG.Fade(8000, 10000, 10, 0);
-        }
-    }
-    }
-</code>
-</pre>
-</details>
-
 ---
 
 ### Reference

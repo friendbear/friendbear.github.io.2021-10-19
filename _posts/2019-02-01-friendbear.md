@@ -26,14 +26,11 @@ tags: [lang-scala]
     ```
   
 
-### kumasora
-
 ### Reference
 
 ### Usefull Link
 
 ### Recommend
-
 
 ### Snippets
 

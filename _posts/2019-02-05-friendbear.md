@@ -14,8 +14,6 @@ tags: [k8s]
 ### Write Test code Scala
 - RockScalaForBeginner
 
-### kumasora
-
 ### Reference
 
 ### Usefull Link

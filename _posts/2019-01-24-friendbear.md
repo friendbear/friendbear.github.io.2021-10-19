@@ -404,12 +404,6 @@ def FuturesPromisesOnlineBanking(args: String*) = {
 </pre>
 </details>
 
-### kumasora
-- Setting
-  - <https://github.com/kumasora>
-  - Slack
-
----
 
 ### Reference
 
