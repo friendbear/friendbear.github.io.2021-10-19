@@ -43,7 +43,6 @@ layout: default
 
 ## 2019-07-17: OWIKLABS
 * <https://amazon-run.qwiklabs.com/>
->>>>>>> master
 
 ## ref
 <https://github.com/azu/mdline>
