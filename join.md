@@ -35,6 +35,11 @@ layout: default
 * <https://developer.amazon.com/ja/>
 * <https://pay.amazon.com/jp>
 
+## 2019-03-04: bitnami.com
+* <https://bitnami.com>
+
+## 2019-05-19: alexa developer 
+* <https://developer.amazon.com/ja/alexa>
 
 ## 2019-07-17: OWIKLABS
 * <https://amazon-run.qwiklabs.com/>
