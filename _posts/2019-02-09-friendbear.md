@@ -18,8 +18,6 @@ $ # network.host: changes 0.0.0.0
 ```
 
 
-### kumasora
-
 ### Reference
 
 ### Usefull Link

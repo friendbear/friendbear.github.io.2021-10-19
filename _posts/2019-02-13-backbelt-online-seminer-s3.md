@@ -3,7 +3,7 @@ layout: post
 auther: friendbear
 title: AWS Black Belt Online Seminar (s3)
 categories: [AWS]
-tags: [S3, S3 Glacier ]
+tags: [S3, S3 Glacier]
 ---
 
 ## S3

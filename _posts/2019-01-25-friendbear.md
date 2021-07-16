@@ -65,8 +65,6 @@ def FuturesPromisesOnlineBanking(args: String*) = {
 </pre>
 </details>
 
-### kumasora
-
 ### Reference
 
 ### Usefull Link

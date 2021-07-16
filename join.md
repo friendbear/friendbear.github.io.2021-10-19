@@ -38,9 +38,16 @@ layout: default
 ## 2019-03-04: bitnami.com
 * <https://bitnami.com>
 
-*
 ## 2019-05-19: alexa developer 
 * <https://developer.amazon.com/ja/alexa>
 
+## 2019-07-17: OWIKLABS
+* <https://amazon-run.qwiklabs.com/>
+>>>>>>> master
+
 ## ref
 <https://github.com/azu/mdline>
+
+## 2021-07-04: dev.to
+* <https://dev.to>
+

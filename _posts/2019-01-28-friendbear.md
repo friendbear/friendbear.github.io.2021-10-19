@@ -44,8 +44,6 @@ tags: [lang-scala, Security]
 * [enhancd](https://github.com/b4b4r07/enhancd)
 * [LinkedIn mobile]
 
-### kumasora
-
 ### Reference
 * <https://talk.jekyllrb.com/>
 * [Yubico](https://www.yubico.com/)

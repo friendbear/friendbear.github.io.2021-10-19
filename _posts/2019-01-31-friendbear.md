@@ -69,8 +69,6 @@ tags: [lang-scala]
       trait S {self: T => } // S REQUIRES a T
     ```
 
-### kumasora
-
 ### Reference
 
 ### Usefull Link

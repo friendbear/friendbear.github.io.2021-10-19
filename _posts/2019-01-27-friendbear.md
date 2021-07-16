@@ -44,9 +44,6 @@ tags: [lang-scala]
     println(htmlSugar(john))
 ```
 
-
-### kumasora
-
 ### Reference
 
 ### Usefull Link

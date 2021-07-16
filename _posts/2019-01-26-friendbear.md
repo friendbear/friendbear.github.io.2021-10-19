@@ -2,7 +2,7 @@
 layout: post
 author: friendbear
 title: Future Promise Very Important Training and Docker
-categories: [blog, lang-scala, vim , etc]
+categories: [blog, lang-scala, vim, etc]
 tags: [lang-scala, vim, Docker]
 ---
 
@@ -87,7 +87,6 @@ libraryDependencies += "com.spotify" % "docker-client" % "8.9.0"
 ### spacevim
 [documentation](https://spacevim.org/documentation/#core-pillars)
 
-### kumasora
 
 ### Reference
 [Editor Config](https://editorconfig.org/)
