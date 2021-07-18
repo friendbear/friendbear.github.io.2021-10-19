@@ -33,6 +33,7 @@ disqus:
 
 analytics:
   provider: "google"
+  google:
     tracking_id: UA-37353976-2
     anonymize_ip: false
 
