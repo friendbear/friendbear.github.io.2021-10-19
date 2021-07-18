@@ -2,8 +2,18 @@ lang: ja_JP
 title: bearsworld
 description: for friendbear GitHub Pages.
 show_downloads: false
-google_analytics: UA-37353976-2
-twitter: true
+# Social Sharing
+twitter:
+  username: friendbear22
+facebook:
+  username: friendbear22
+  app_id:
+  publisher:
+# For specifying social profiles
+social:
+  type:
+  name:
+  links:
 #hubspot: true
 theme: jekyll-theme-architect
 paginate: 5
@@ -20,6 +30,11 @@ disqus:
   # Leave shortname blank to disable comments site-wide.
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
   shortname: friendbear
+
+analytics:
+  provider: "google"
+    tracking_id: UA-37353976-2
+    anonymize_ip: false
 
 comments: true
 
@@ -42,6 +57,59 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+        # Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/friendbear22"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://facebook.com/friendbear22"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/friendbear"
+        #    - label: "YouTube"
+        #      icon: "fab fa-fw fa-youtube"
+        #      url: "https://youtube.com/rockthejvm"
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 plugins:
   - 'jekyll-feed'
