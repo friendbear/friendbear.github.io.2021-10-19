@@ -77,9 +77,21 @@ footer:
 
 # Reading Files
 include:
+include:
   - .htaccess
+  - node_modules/uglifier/index.js
   - _pages
 exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
@@ -93,7 +105,6 @@ exclude:
   - Capfile
   - CHANGELOG
   - config
-  - Gemfile
   - Gruntfile.js
   - gulpfile.js
   - LICENSE
@@ -113,6 +124,11 @@ encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 plugins:
-  - 'jekyll-feed'
-  - 'jekyll-seo-tag'
-  - 'jekyll-twitter-plugin'
+  - jekyll-gist
+  - jekyll-coffeescript
+  - jekyll-assets
+  - jekyll-paginate
+  - jekyll-assets
+  - jekyll-youtube
+  - jekyll-seo-tag
+

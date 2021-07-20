@@ -2,6 +2,15 @@ source 'https://rubygems.org'
 
 gemspec
 
-gem "jekyll-feed", "~> 0.9"
-gem "jekyll-seo-tag", "~> 2.1"
-gem 'jekyll-twitter-plugin'
+group :jekyll_plugins do
+  gem "jekyll-gist"
+  gem "jekyll-coffeescript"
+  gem "jekyll-assets"
+  gem "jekyll-paginate"
+  gem "jekyll-assets"
+  gem "sprockets", "~> 3.7"
+  gem "kramdown-parser-gfm"
+  gem "jekyll-youtube"
+  gem "jekyll-seo-tag", "~> 2.6"
+end
+
