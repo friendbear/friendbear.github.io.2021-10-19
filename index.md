@@ -77,7 +77,10 @@ layout: default
 
 ### Scala Community
 * [Scala Users](https://users.scala-lang.org/top)
+* [my accountl](https://users.scala-lang.org/u/friendbear)
 
+### Rust Community
+* [my accountl](https://users.rust-lang.org/u/friendbear)
 
 <div>
 <a target="_blank" href="https://users.scala-lang.org/u/friendbear">Link to My ScalaUsers</a>
