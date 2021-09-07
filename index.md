@@ -36,10 +36,13 @@ layout: default
 [DevOps Enginner 2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png)
 
 ## GitHub
+* [Github Sponsor](https://github.com/sponsors/)
 * [Github.blog](https://github.blog/)
 * [DEVHUB](https://devhubapp.com/)
 * [zenhub](https://app.zenhub.com)
 * [smee](https://smee.io)
+
+<iframe src="https://github.com/sponsors/friendbear/card" title="Sponsor friendbear" height="225" width="600" style="border: 0;"></iframe>
 
 ## AWS
 * [AWS trainig and certification](https://www.aws.training)
@@ -97,10 +100,6 @@ layout: default
 - <https://jupyterlab.readthedocs.io/>
 
 ## Apache 
-### Apache Arrow
-* Apache Arrow
-  A cross-language development platform for in-memory data
-  <https://arrow.apache.org/>
 * Apache Spark
   <https://spark.apache.org/>
 
