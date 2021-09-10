@@ -28,12 +28,23 @@ layout: default
 ## Lang
 * [programing-language](/lang.html)
 
+## Playground
+
+* [Go](https://play.golang.org/)
+
+* [Rust](https://play.rust-lang.org/)
+
+* [Kotlin](https://play.kotlinlang.org/)
+
+* [Scala](https://scalameta.org/)
+
+
 ## Roadmap
 
-[BackEnd Enginner 2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/backend.png)
+[BackEnd Enginner](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/backend.png)
 
 
-[DevOps Enginner 2019](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png)
+[DevOps Enginner](https://github.com/kamranahmedse/developer-roadmap/blob/master/images/devops.png)
 
 ## GitHub
 * [Github Sponsor](https://github.com/sponsors/)
@@ -42,7 +53,6 @@ layout: default
 * [zenhub](https://app.zenhub.com)
 * [smee](https://smee.io)
 
-<iframe src="https://github.com/sponsors/friendbear/card" title="Sponsor friendbear" height="225" width="600" style="border: 0;"></iframe>
 
 ## AWS
 * [AWS trainig and certification](https://www.aws.training)
@@ -121,5 +131,15 @@ layout: default
 </pre>
 <details>
 
-## Writing Format is Markdown
+<iframe src="https://github.com/sponsors/friendbear/card" title="Sponsor friendbear" height="225" width="600" style="border: 0;"></iframe>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('friendbear', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#794bc4',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
 
