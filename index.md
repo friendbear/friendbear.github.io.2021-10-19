@@ -29,15 +29,11 @@ layout: default
 * [programing-language](/lang.html)
 
 ## Playground
-
+* [awesome](https://code.labstack.com/)
 * [Go](https://play.golang.org/)
-
 * [Rust](https://play.rust-lang.org/)
-
 * [Kotlin](https://play.kotlinlang.org/)
-
 * [Scala](https://scalameta.org/)
-
 
 ## Roadmap
 
@@ -95,10 +91,6 @@ layout: default
 ### Rust Community
 * [my accountl](https://users.rust-lang.org/u/friendbear)
 
-<div>
-<a target="_blank" href="https://users.scala-lang.org/u/friendbear">Link to My ScalaUsers</a>
-</div>
-
 ### Links
 * [Qiita](https://qiita.com/tags/scala)
 ---
@@ -112,14 +104,10 @@ layout: default
 ## Apache 
 * Apache Spark
   <https://spark.apache.org/>
-
-### Apache 
----
-* [Markdown Reference](./markdown_reference.html)
-
 ## etc.
 
 * <https://www.wikihow.com>
+* [Markdown Reference](./markdown_reference.html)
 
 <details>
 <summary>-</summary>
@@ -127,7 +115,7 @@ layout: default
 * [hackr.io](https://hackr.io/friendbear)
 * [tools](/tools.html)
 * [Join](/join.html)
-* [Son](https://kumasora.github.io/ "kumasora is my son")
+* [Son](https://toosu.github.io/ "toosu is my son")
 </pre>
 <details>
 
