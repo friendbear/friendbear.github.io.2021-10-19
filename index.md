@@ -119,15 +119,3 @@ layout: default
 </pre>
 <details>
 
-<iframe src="https://github.com/sponsors/friendbear/card" title="Sponsor friendbear" height="225" width="600" style="border: 0;"></iframe>
-
-<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-<script>
-  kofiWidgetOverlay.draw('friendbear', {
-    'type': 'floating-chat',
-    'floating-chat.donateButton.text': 'Support me',
-    'floating-chat.donateButton.background-color': '#794bc4',
-    'floating-chat.donateButton.text-color': '#fff'
-  });
-</script>
-
