@@ -1,6 +1,6 @@
 ---
 
-layout: [post]
+layout: post
 author: T Kumagai
 Title: Power BI入門講座内容
 categories: [Microsoft]

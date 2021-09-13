@@ -1,7 +1,8 @@
 ---
 
 title: Linuxコマンド備忘録
-tag: Linux, command
+categories: Linux
+tag: [Linux, command]
 ---
 
 | コマンド        | 用途                                                   | 収録パッケージ |
