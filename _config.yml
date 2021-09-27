@@ -34,8 +34,8 @@ disqus:
 analytics:
   provider: "google"
   google:
-    tracking_id: UA-37353976-2
-    anonymize_ip: false
+    tracking_id: UA-37353976-3
+    anonymize_ip: true
 
 comments: true
 
