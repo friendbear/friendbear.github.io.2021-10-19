@@ -35,7 +35,7 @@ analytics:
   provider: "google"
   google:
     tracking_id: UA-37353976-3
-    anonymize_ip: true
+    anonymize_ip: false
 
 comments: true
 
